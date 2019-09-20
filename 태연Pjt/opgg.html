@@ -2,15 +2,25 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0" />-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>롤 전적 검색 OP.GG - 전적 검색 사이트</title>
+    <style>
+      .header_flex {
+        width: 100%;
+      }
+      @media (max-width: 1080px) {
+        .header_flex {
+          width: 1060px;
+        }
+      }
+    </style>
   </head>
-  <body style="background-color: #5383e8">
+  <body style="width:100%; background-color: #5383e8;">
     <!-- header -->
-    <div>
+    <header class="header_flex">
       <!-- first line -->
-      <div style="height: 39px; background-color: #232f46;">
+      <div style="height: 39px; width: 100%; background-color: #232f46;">
         <div
           style="height: 100%; width: 97px; padding-top: 10px; padding-bottom: 10px; background-color: #5383e8; float: left;"
         >
@@ -88,8 +98,8 @@
         </span>
       </div>
       <!-- second line -->
-      <div style="height: 48px">
-        <div style="height: 100%; width: 1250px; margin: 0 auto">
+      <div style="height: 48px; width: 100%; overflow: hidden;">
+        <div style="height: 100%; width: 1250px; margin: 0 auto;">
           <div
             style="height: 100%; float: left; padding-top: 12px; padding-bottom: 12px; border-bottom: 3px solid white"
           >
@@ -147,7 +157,7 @@
       <!-- third line -->
       <div style="height: 40px; background-color: rgba(0, 0, 0, 0.5)">
         <div
-          style="height: 40px; width: 1050px; margin: 0 auto; padding-top: 10px; padding-bottom: 10px"
+          style="height: 40px; width: 65%; margin: 0 auto; padding-top: 10px; padding-bottom: 10px"
         >
           <span
             style="font-size: 12px; color: white; position: relative; bottom: 3px"
@@ -156,9 +166,9 @@
           >
         </div>
       </div>
-    </div>
+    </header>
     <!-- main -->
-    <div style="width: 100vw; height: 1150px; padding: 0px 0px 120px">
+    <div style="width: 100%; height: 1057px; margin: 0 auto;">
       <!-- Logo -->
       <div
         style="height:256px; width: 410px; padding: 32px 0px 24px; margin: 0 auto"
@@ -170,28 +180,39 @@
       </div>
       <!-- Search Bar -->
       <div
-        style="width: 620px; margin:0 auto; font-size:85%; background-color: white"
+        style="width: 620px; margin:0 auto; font-size:85%; background-color: white; position: relative;"
       >
         <input
-          style="height: 49.8px; width: 75%; border: 0px"
+          style="height: 49.8px; width: 77%; border: 0px; outline: none; position: relative; left: 15px"
           type="text"
-          placeholder="     소환사명, 소환사명, ..."
+          placeholder=" 소환사명, 소환사명, ..."
           src=""
         />
         <!-- Button trigger modal -->
         <button
           type="button"
           class="btn"
-          style="background-color: rgb(120, 129, 133); height: 10px; width: 30px; position: relative; bottom: 2px;"
+          style="background-color: rgb(120, 129, 133); height: 10px; width: 30px; position: relative; bottom: 3px; outline: none;"
           data-toggle="modal"
           data-target="#language_select"
         >
           <span
-            style="color: white; position: relative; bottom: 12.5px; right: 5.5px; font-size:85%"
+            style="color: white; position: relative; bottom: 13.5px; right: 6px; font-size:85%;"
             >KR</span
           >
         </button>
-
+        <button
+          type="button"
+          class="btn"
+          style="height: 10px; width: 30px; position: relative; bottom: 4.5px; outline: none;"
+          data-toggle="modal"
+          data-target="#language_select"
+        >
+          <i
+            class="fas fa-caret-down"
+            style="color: rgb(120, 129, 133); position:relative; bottom:13px; right:3px; width: 12px; height: 12px;"
+          ></i>
+        </button>
         <!-- Modal -->
         <div
           class="modal fade"
@@ -204,7 +225,9 @@
           <div class="modal-dialog" role="document">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <h5 class="modal-title" id="exampleModalLabel">
+                  Modal title
+                </h5>
                 <button
                   type="button"
                   class="close"
@@ -232,350 +255,505 @@
             </div>
           </div>
         </div>
+        <!-- Go -->
+        <button
+          class="btn"
+          type="button"
+          style="width: 47px; height: 29px; background-color: rgb(83, 177, 232); color: white; position: relative; left: 13px; bottom: 2px"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          <span
+            style="font-weight: 750; position: relative; bottom: 6px; right: 4px"
+            >.GG</span
+          >
+        </button>
       </div>
+      <!-- Ad banner -->
       <div
-        style="width: 970px; height: 250px; margin-left: 60px; margin-top: 30px"
+        style="width: 970px; height: 270px; margin: 0 auto; padding-top: 10px; padding-bottom: 10px; position: relative; top: 20px"
       >
         <img
           src="https://crcdn01.adnxs.com/creative/p/806/2019/8/29/13840379/e8cb53be-7294-4459-9388-ea28ccfe91bd.jpg"
         />
       </div>
-      <div style="height: 49.8px; background-color: white; margin-top: 35px">
-        <span
-          style="font-weight: bold; font-size: 14px; padding: 17px 0px 16px 20px"
-          >OP.GG Talk 인기글</span
-        >
-      </div>
+      <!-- 인기글 Box -->
       <div
         class="row"
-        style="width: 1080px; height: 68px; background-color: white; margin-left: 0px; border-top: 1px solid #f0f0f0"
+        style="width: 1050px; height: 395px; margin: 0 auto; position: relative; top: 42px; background-color: white"
       >
         <div
-          class="col-1"
-          style="font-style: oblique; color: #1ab80c; text-align: center; font-size: 18px; width: 55px; margin-top: 19px"
+          style="width: 100%; height: 12.5%; border-bottom: 1px solid rgb(240, 240, 240)"
         >
-          1
-        </div>
-        <div class="col-1" style="padding: 0">
-          <img
-            src="https://opgg-com-image.akamaized.net/attach/images/20190917080300.339088.jpg?image=w_200"
-            style="height: 67px; width: 100px"
-          />
-        </div>
-        <div class="col-4" style="border-right: 1px solid #f0f0f0">
-          <div style="display: inline-block">
-            <span style="font-size: 14px;"
-              >???: 나한테 훈수하는놈 다 뒤졌어..</span
-            >
-          </div>
-          <div style="display: inline-block">
-            <span style="font-size: 14px; color: #0475b8">[46]</span>
-          </div>
-          <div>
-            <span style="font-size: 12px; color: #879292">5시간 전</span>
-            <span style="font-size: 12px; margin-left: 10px; color: #879292"
-              >피죤</span
-            >
-          </div>
+          <span
+            style="width: 130px; color: black; font-weight: 700; font-size: 93%; position: relative; left: 17px; top: 13px; margin-block-end: 0px"
+          >
+            OP.GG Talk 인기글
+          </span>
         </div>
         <div
-          class="col-1"
-          style="font-style: oblique; color: #989898; text-align: center; font-size: 18px; width: 55px; margin-top: 19px"
+          style="height: 87.5%; width: 50%; border-right: 1px solid rgb(240, 240, 240); float: left"
         >
-          6
-        </div>
-        <div class="col-1" style="padding: 0">
-          <img
-            src="https://opgg-com-image.akamaized.net/attach/images/20190917092840.748477.jpg?image=w_200"
-            style="height: 67px; width: 100px"
-          />
-        </div>
-        <div class="col-4" style="border-right: 1px solid #f0f0f0">
-          <div style="display: inline-block">
-            <span style="font-size: 14px;">피방자리앉는데 이거뭐냐</span>
-          </div>
-          <div style="display: inline-block">
-            <span style="font-size: 14px; color: #0475b8">[32]</span>
-          </div>
-          <div>
-            <span style="font-size: 12px; color: #879292">3시간 전</span>
-            <span style="font-size: 12px; margin-left: 10px; color: #879292"
-              >고맹추</span
+          <div
+            style="width: 100%; height: 20%; border-bottom: 1px solid rgb(240, 240, 240)"
+          >
+            <div
+              style="height: 100%; width: 9%; text-align: center; float: left;"
             >
+              <span
+                style="font-size: 140%; font-style: oblique; color: rgb(26, 184, 12); position: relative; top: 14px"
+                >1</span
+              >
+            </div>
+            <div style="height: 100%; width: 69%; float: left;">
+              <div style="height: 50%; width: 100%">
+                <span
+                  style="font-size: 87%; position: relative; top: 7px; left: 10px"
+                >
+                  ???: 나한테 훈수하는놈 다 뒤졌어..
+                </span>
+                <span
+                  style="font-size: 88%; font-weight: 500; position: relative; top: 7px; left: 10px; color: rgb(4, 117, 184)"
+                >
+                  [46]
+                </span>
+              </div>
+              <div style="height: 50%; width: 100%">
+                <span
+                  style="font-size: 78%; color: rgb(135, 146, 146); position: relative; left: 11px; bottom: 4px"
+                >
+                  5시간 전
+                </span>
+                <span
+                  style="font-size: 78%; color:rgb(135, 146, 146); position:relative; left: 24px; bottom: 4px;"
+                >
+                  피죤
+                </span>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-      <div
-        class="row"
-        style="width: 1080px; height: 68px; background-color: white; margin-left: 0px; border-top: 1px solid #f0f0f0"
-      >
-        <div
-          class="col-1"
-          style="font-style: oblique; color: #1ab80c; text-align: center; font-size: 18px; width: 55px; margin-top: 19px"
-        >
-          2
-        </div>
-        <div class="col-1" style="padding: 0">
-          <img
-            src="https://img.ironmancdn.xyz/upload/14267bd019548c76f0488d808e2823ee.jpg"
-            style="height: 67px; width: 100px"
-          />
-        </div>
-        <div class="col-4" style="border-right: 1px solid #f0f0f0">
-          <div style="display: inline-block">
-            <span style="font-size: 14px;"
-              >그저 아이가 솜사탕을 먹고 어둠의 힘에 눈을뜨게되..</span
+          <div
+            style="width: 100%; height: 20%; border-bottom: 1px solid rgb(240, 240, 240)"
+          >
+            <div
+              style="height: 100%; width: 9%; text-align: center; float: left;"
             >
+              <span
+                style="font-size: 140%; font-style: oblique; color: rgb(26, 184, 12); position: relative; top: 14px"
+                >2</span
+              >
+            </div>
+            <div style="height: 100%; width: 22%; float: left;">
+              <img
+                src="https://img.ironmancdn.xyz/upload/14267bd019548c76f0488d808e2823ee.jpg"
+                style="width: 100%; height: 90%; position:relative; top: 3.5px"
+              />
+            </div>
+            <div style="height: 100%; width: 69%; float: left;">
+              <div style="height: 50%; width: 100%">
+                <span
+                  style="font-size: 87%; position: relative; top: 7px; left: 10px"
+                >
+                  그저 아이가 솜사탕을 먹고 어둠의 힘에 눈을뜨게되..
+                </span>
+              </div>
+              <div style="height: 50%; width: 100%">
+                <span
+                  style="font-size: 78%; color: rgb(135, 146, 146); position: relative; left: 11px; bottom: 4px"
+                >
+                  7시간 전
+                </span>
+                <span
+                  style="font-size: 78%; color:rgb(135, 146, 146); position:relative; left: 24px; bottom: 4px;"
+                >
+                  하핥짝
+                </span>
+              </div>
+            </div>
           </div>
-
-          <div>
-            <span style="font-size: 12px; color: #879292">7시간 전</span>
-            <span style="font-size: 12px; margin-left: 10px; color: #879292"
-              >하핥짝</span
+          <div
+            style="width: 100%; height: 20%; border-bottom: 1px solid rgb(240, 240, 240)"
+          >
+            <div
+              style="height: 100%; width: 9%; text-align: center; float: left;"
             >
+              <span
+                style="font-size: 140%; font-style: oblique; color: rgb(26, 184, 12); position: relative; top: 14px"
+                >3</span
+              >
+            </div>
+            <div style="height: 100%; width: 22%; float: left;">
+              <img
+                src="https://opgg-com-image.akamaized.net/attach/images/20190917050643.641936.jpg?image=w_200"
+                style="width: 100%; height: 90%; position:relative; top: 3.5px"
+              />
+            </div>
+            <div style="height: 100%; width: 69%; float: left;">
+              <div style="height: 50%; width: 100%">
+                <span
+                  style="font-size: 87%; position: relative; top: 7px; left: 10px"
+                >
+                  숫자로 보는 페이커 기록들 ㄷㄷㄷㄷㄷㄷ
+                </span>
+                <span
+                  style="font-size: 88%; font-weight: 500; position: relative; top: 7px; left: 10px; color: rgb(4, 117, 184)"
+                >
+                  [73]
+                </span>
+              </div>
+              <div style="height: 50%; width: 100%">
+                <span
+                  style="font-size: 78%; color: rgb(135, 146, 146); position: relative; left: 11px; bottom: 4px"
+                >
+                  하루 전
+                </span>
+                <span
+                  style="font-size: 78%; color:rgb(135, 146, 146); position:relative; left: 24px; bottom: 4px;"
+                >
+                  역시릅신
+                </span>
+              </div>
+            </div>
           </div>
-        </div>
-        <div
-          class="col-1"
-          style="font-style: oblique; color: #989898; text-align: center; font-size: 18px; width: 55px; margin-top: 19px"
-        >
-          7
-        </div>
-        <div class="col-1" style="padding: 0">
-          <img
-            src="https://opgg-com-image.akamaized.net/attach/images/20190917071321.641936.jpg?image=w_200"
-            style="height: 67px; width: 100px"
-          />
-        </div>
-        <div class="col-4" style="border-right: 1px solid #f0f0f0">
-          <div style="display: inline-block">
-            <span style="font-size: 14px;"
-              >친구의 말 한마디에 술은 끓은 친구.JPG</span
+          <div
+            style="width: 100%; height: 20%; border-bottom: 1px solid rgb(240, 240, 240)"
+          >
+            <div
+              style="height: 100%; width: 9%; text-align: center; float: left;"
             >
+              <span
+                style="font-size: 140%; font-style: oblique; color: rgb(152, 152, 152); position: relative; top: 14px"
+                >4</span
+              >
+            </div>
+            <div style="height: 100%; width: 69%; float: left;">
+              <div style="height: 50%; width: 100%">
+                <span
+                  style="font-size: 87%; position: relative; top: 7px; left: 10px"
+                >
+                  근데 원딜은 진짜 왕자님들이야
+                </span>
+                <span
+                  style="font-size: 88%; font-weight: 500; position: relative; top: 7px; left: 10px; color: rgb(4, 117, 184)"
+                >
+                  [130]
+                </span>
+              </div>
+              <div style="height: 50%; width: 100%">
+                <span
+                  style="font-size: 78%; color: rgb(135, 146, 146); position: relative; left: 11px; bottom: 4px"
+                >
+                  하루 전
+                </span>
+                <span
+                  style="font-size: 78%; color:rgb(135, 146, 146); position:relative; left: 24px; bottom: 4px;"
+                >
+                  햄토리
+                </span>
+              </div>
+            </div>
           </div>
-          <div style="display: inline-block">
-            <span style="font-size: 14px; color: #0475b8">[13]</span>
-          </div>
-          <div>
-            <span style="font-size: 12px; color: #879292">6시간 전</span>
-            <span style="font-size: 12px; margin-left: 10px; color: #879292"
-              >역시릅신</span
+          <div style="width: 100%; height: 20%;">
+            <div
+              style="height: 100%; width: 9%; text-align: center; float: left;"
             >
+              <span
+                style="font-size: 140%; font-style: oblique; color: rgb(152, 152, 152); position: relative; top: 14px"
+                >5</span
+              >
+            </div>
+            <div style="height: 100%; width: 22%; float: left;">
+              <img
+                src="https://opgg-com-image.akamaized.net/attach/images/20190917071511.120440.jpg?image=w_200"
+                style="width: 100%; height: 90%; position:relative; top: 3.5px"
+              />
+            </div>
+            <div style="height: 100%; width: 69%; float: left;">
+              <div style="height: 50%; width: 100%">
+                <span
+                  style="font-size: 87%; position: relative; top: 7px; left: 10px"
+                >
+                  ...?
+                </span>
+                <span
+                  style="font-size: 88%; font-weight: 500; position: relative; top: 7px; left: 10px; color: rgb(4, 117, 184)"
+                >
+                  [24]
+                </span>
+              </div>
+              <div style="height: 50%; width: 100%">
+                <span
+                  style="font-size: 78%; color: rgb(135, 146, 146); position: relative; left: 11px; bottom: 4px"
+                >
+                  하루 전
+                </span>
+                <span
+                  style="font-size: 78%; color:rgb(135, 146, 146); position:relative; left: 24px; bottom: 4px;"
+                >
+                  세콤한레몬
+                </span>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div
-        class="row"
-        style="width: 1080px; height: 68px; background-color: white; margin-left: 0px; border-top: 1px solid #f0f0f0"
-      >
-        <div
-          class="col-1"
-          style="font-style: oblique; color: #1ab80c; text-align: center; font-size: 18px; width: 55px; margin-top: 19px"
-        >
-          3
-        </div>
-        <div class="col-1" style="padding: 0">
-          <img
-            src="https://opgg-com-image.akamaized.net/attach/images/20190917050643.641936.jpg?image=w_200"
-            style="height: 67px; width: 100px"
-          />
-        </div>
-        <div class="col-4" style="border-right: 1px solid #f0f0f0">
-          <div style="display: inline-block">
-            <span style="font-size: 14px;"
-              >숫자로 보는 페이커 기록들 ㄷㄷㄷㄷㄷㄷ</span
+        <div style="height: 87.5%; width: 50%;">
+          <div
+            style="width: 100%; height: 20%; border-bottom: 1px solid rgb(240, 240, 240)"
+          >
+            <div
+              style="height: 100%; width: 9%; text-align: center; float: left;"
             >
+              <span
+                style="font-size: 140%; font-style: oblique; color: rgb(152, 152, 152); position: relative; top: 14px"
+                >6</span
+              >
+            </div>
+            <div style="height: 100%; width: 22%; float: left;">
+              <img
+                src="https://opgg-com-image.akamaized.net/attach/images/20190917092840.748477.jpg?image=w_200"
+                style="width: 100%; height: 90%; position:relative; top: 3.5px"
+              />
+            </div>
+            <div style="height: 100%; width: 69%; float: left;">
+              <div style="height: 50%; width: 100%">
+                <span
+                  style="font-size: 87%; position: relative; top: 7px; left: 10px"
+                >
+                  피방자리앉는데 이거뭐냐
+                </span>
+                <span
+                  style="font-size: 88%; font-weight: 500; position: relative; top: 7px; left: 10px; color: rgb(4, 117, 184)"
+                >
+                  [32]
+                </span>
+              </div>
+              <div style="height: 50%; width: 100%">
+                <span
+                  style="font-size: 78%; color: rgb(135, 146, 146); position: relative; left: 11px; bottom: 4px"
+                >
+                  3시간 전
+                </span>
+                <span
+                  style="font-size: 78%; color:rgb(135, 146, 146); position:relative; left: 24px; bottom: 4px;"
+                >
+                  고맹추
+                </span>
+              </div>
+            </div>
           </div>
-          <div style="display: inline-block">
-            <span style="font-size: 14px; color: #0475b8">[73]</span>
-          </div>
-          <div>
-            <span style="font-size: 12px; color: #879292">하루 전</span>
-            <span style="font-size: 12px; margin-left: 10px; color: #879292"
-              >역시릅신</span
+          <div
+            style="width: 100%; height: 20%; border-bottom: 1px solid rgb(240, 240, 240)"
+          >
+            <div
+              style="height: 100%; width: 9%; text-align: center; float: left;"
             >
+              <span
+                style="font-size: 140%; font-style: oblique; color: rgb(152, 152, 152); position: relative; top: 14px"
+                >7</span
+              >
+            </div>
+            <div style="height: 100%; width: 22%; float: left;">
+              <img
+                src="https://opgg-com-image.akamaized.net/attach/images/20190917071321.641936.jpg?image=w_200"
+                style="width: 100%; height: 90%; position:relative; top: 3.5px"
+              />
+            </div>
+            <div style="height: 100%; width: 69%; float: left;">
+              <div style="height: 50%; width: 100%">
+                <span
+                  style="font-size: 87%; position: relative; top: 7px; left: 10px"
+                >
+                  친구의 말 한마디에 술은 끓은 친구.JPG
+                </span>
+                <span
+                  style="font-size: 88%; font-weight: 500; position: relative; top: 7px; left: 10px; color: rgb(4, 117, 184)"
+                >
+                  [13]
+                </span>
+              </div>
+              <div style="height: 50%; width: 100%">
+                <span
+                  style="font-size: 78%; color: rgb(135, 146, 146); position: relative; left: 11px; bottom: 4px"
+                >
+                  6시간 전
+                </span>
+                <span
+                  style="font-size: 78%; color:rgb(135, 146, 146); position:relative; left: 24px; bottom: 4px;"
+                >
+                  역시릅신
+                </span>
+              </div>
+            </div>
           </div>
-        </div>
-        <div
-          class="col-1"
-          style="font-style: oblique; color: #989898; text-align: center; font-size: 18px; width: 55px; margin-top: 19px"
-        >
-          8
-        </div>
-        <div class="col-1" style="padding: 0">
-          <img
-            src="https://opgg-com-image.akamaized.net/attach/images/20190917060430.641943_thumb.jpg?image=w_200"
-            style="height: 67px; width: 100px"
-          />
-        </div>
-        <div class="col-4" style="border-right: 1px solid #f0f0f0">
-          <div style="display: inline-block">
-            <span style="font-size: 14px;">친구가 사라져 당황한 여우</span>
-          </div>
-          <div style="display: inline-block">
-            <span style="font-size: 14px; color: #0475b8">[20]</span>
-          </div>
-          <div>
-            <span style="font-size: 12px; color: #879292">하루 전</span>
-            <span style="font-size: 12px; margin-left: 10px; color: #879292"
-              >페이커여워</span
+          <div
+            style="width: 100%; height: 20%; border-bottom: 1px solid rgb(240, 240, 240)"
+          >
+            <div
+              style="height: 100%; width: 9%; text-align: center; float: left;"
             >
+              <span
+                style="font-size: 140%; font-style: oblique; color: rgb(152, 152, 152); position: relative; top: 14px"
+                >8</span
+              >
+            </div>
+            <div style="height: 100%; width: 22%; float: left;">
+              <img
+                src="https://opgg-com-image.akamaized.net/attach/images/20190917060430.641943_thumb.jpg?image=w_200"
+                style="width: 100%; height: 90%; position:relative; top: 3.5px"
+              />
+            </div>
+            <div style="height: 100%; width: 69%; float: left;">
+              <div style="height: 50%; width: 100%">
+                <span
+                  style="font-size: 87%; position: relative; top: 7px; left: 10px"
+                >
+                  친구가 사라져 당황한 여우
+                </span>
+                <span
+                  style="font-size: 88%; font-weight: 500; position: relative; top: 7px; left: 10px; color: rgb(4, 117, 184)"
+                >
+                  [20]
+                </span>
+              </div>
+              <div style="height: 50%; width: 100%">
+                <span
+                  style="font-size: 78%; color: rgb(135, 146, 146); position: relative; left: 11px; bottom: 4px"
+                >
+                  하루 전
+                </span>
+                <span
+                  style="font-size: 78%; color:rgb(135, 146, 146); position:relative; left: 24px; bottom: 4px;"
+                >
+                  페이커여워
+                </span>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-      <div
-        class="row"
-        style="width: 1080px; height: 68px; background-color: white; margin-left: 0px; border-top: 1px solid #f0f0f0"
-      >
-        <div
-          class="col-1"
-          style="font-style: oblique; color: #989898; text-align: center; font-size: 18px; width: 55px; margin-top: 19px"
-        >
-          4
-        </div>
-        <div class="col-5" style="border-right: 1px solid #f0f0f0">
-          <div style="display: inline-block">
-            <span style="font-size: 14px;">근데 원딜은 진짜 왕자님들이야</span>
-          </div>
-          <div style="display: inline-block">
-            <span style="font-size: 14px; color: #0475b8">[130]</span>
-          </div>
-          <div>
-            <span style="font-size: 12px; color: #879292">하루 전</span>
-            <span style="font-size: 12px; margin-left: 10px; color: #879292"
-              >햄토리</span
+          <div
+            style="width: 100%; height: 20%; border-bottom: 1px solid rgb(240, 240, 240)"
+          >
+            <div
+              style="height: 100%; width: 9%; text-align: center; float: left;"
             >
+              <span
+                style="font-size: 140%; font-style: oblique; color: rgb(152, 152, 152); position: relative; top: 14px"
+                >9</span
+              >
+            </div>
+            <div style="height: 100%; width: 22%; float: left;">
+              <img
+                src="https://opgg-com-image.akamaized.net/attach/images/20190917011550.849695.jpg?image=w_200"
+                style="width: 100%; height: 90%; position:relative; top: 3.5px"
+              />
+            </div>
+            <div style="height: 100%; width: 69%; float: left;">
+              <div style="height: 50%; width: 100%">
+                <span
+                  style="font-size: 87%; position: relative; top: 7px; left: 10px"
+                >
+                  실제로 나오면 라이엇 매출 올려줄 스킨들
+                </span>
+                <span
+                  style="font-size: 88%; font-weight: 500; position: relative; top: 7px; left: 10px; color: rgb(4, 117, 184)"
+                >
+                  [121]
+                </span>
+              </div>
+              <div style="height: 50%; width: 100%">
+                <span
+                  style="font-size: 78%; color: rgb(135, 146, 146); position: relative; left: 11px; bottom: 4px"
+                >
+                  하루 전
+                </span>
+                <span
+                  style="font-size: 78%; color:rgb(135, 146, 146); position:relative; left: 24px; bottom: 4px;"
+                >
+                  어차피우승은리버풀
+                </span>
+              </div>
+            </div>
           </div>
-        </div>
-        <div
-          class="col-1"
-          style="font-style: oblique; color: #989898; text-align: center; font-size: 18px; width: 55px; margin-top: 19px"
-        >
-          9
-        </div>
-        <div class="col-1" style="padding: 0">
-          <img
-            src="https://opgg-com-image.akamaized.net/attach/images/20190917011550.849695.jpg?image=w_200"
-            style="height: 67px; width: 100px"
-          />
-        </div>
-        <div class="col-4" style="border-right: 1px solid #f0f0f0">
-          <div style="display: inline-block">
-            <span style="font-size: 14px;"
-              >실제로 나오면 라이엇 매출 올려줄 스킨들</span
+          <div style="width: 100%; height: 20%;">
+            <div
+              style="height: 100%; width: 9%; text-align: center; float: left;"
             >
-          </div>
-          <div style="display: inline-block">
-            <span style="font-size: 14px; color: #0475b8">[121]</span>
-          </div>
-          <div>
-            <span style="font-size: 12px; color: #879292">하루 전</span>
-            <span style="font-size: 12px; margin-left: 10px; color: #879292"
-              >어차피우승은리버풀</span
-            >
-          </div>
-        </div>
-      </div>
-      <div
-        class="row"
-        style="width: 1080px; height: 68px; background-color: white; margin-left: 0px; border-top: 1px solid #f0f0f0"
-      >
-        <div
-          class="col-1"
-          style="font-style: oblique; color: #989898; text-align: center; font-size: 18px; width: 55px; margin-top: 19px"
-        >
-          5
-        </div>
-        <div class="col-1" style="padding: 0">
-          <img
-            src="https://opgg-com-image.akamaized.net/attach/images/20190917071511.120440.jpg?image=w_200"
-            style="height: 67px; width: 100px"
-          />
-        </div>
-        <div class="col-4" style="border-right: 1px solid #f0f0f0">
-          <div style="display: inline-block">
-            <span style="font-size: 14px;">...?</span>
-          </div>
-          <div style="display: inline-block">
-            <span style="font-size: 14px; color: #0475b8">[24]</span>
-          </div>
-          <div>
-            <span style="font-size: 12px; color: #879292">하루 전</span>
-            <span style="font-size: 12px; margin-left: 10px; color: #879292"
-              >세콤한레몬</span
-            >
-          </div>
-        </div>
-        <div
-          class="col-1"
-          style="font-style: oblique; color: #989898; text-align: center; font-size: 18px; width: 55px; margin-top: 19px"
-        >
-          10
-        </div>
-        <div class="col-1" style="padding: 0">
-          <img
-            src="https://opgg-com-image.akamaized.net/attach/images/20190917033847.926873.jpg?image=w_200"
-            style="height: 67px; width: 100px"
-          />
-        </div>
-        <div class="col-4" style="border-right: 1px solid #f0f0f0">
-          <div style="display: inline-block">
-            <span style="font-size: 14px;"
-              >이번 다리우스 스킨 지리뉴...ㄷㄷ;;</span
-            >
-          </div>
-          <div style="display: inline-block">
-            <span style="font-size: 14px; color: #0475b8">[40]</span>
-          </div>
-          <div>
-            <span style="font-size: 12px; color: #879292">하루 전</span>
-            <span style="font-size: 12px; margin-left: 10px; color: #879292"
-              >코꾸뇽</span
-            >
+              <span
+                style="font-size: 140%; font-style: oblique; color: rgb(152, 152, 152); position: relative; top: 14px"
+                >10</span
+              >
+            </div>
+            <div style="height: 100%; width: 22%; float: left;">
+              <img
+                src="https://opgg-com-image.akamaized.net/attach/images/20190917033847.926873.jpg?image=w_200"
+                style="width: 100%; height: 90%; position:relative; top: 3.5px"
+              />
+            </div>
+            <div style="height: 100%; width: 69%; float: left;">
+              <div style="height: 50%; width: 100%">
+                <span
+                  style="font-size: 87%; position: relative; top: 7px; left: 10px"
+                >
+                  이번 다리우스 스킨 지리뉴...ㄷㄷ;;
+                </span>
+                <span
+                  style="font-size: 88%; font-weight: 500; position: relative; top: 7px; left: 10px; color: rgb(4, 117, 184)"
+                >
+                  [40]
+                </span>
+              </div>
+              <div style="height: 50%; width: 100%">
+                <span
+                  style="font-size: 78%; color: rgb(135, 146, 146); position: relative; left: 11px; bottom: 4px"
+                >
+                  하루 전
+                </span>
+                <span
+                  style="font-size: 78%; color:rgb(135, 146, 146); position:relative; left: 24px; bottom: 4px;"
+                >
+                  코꾸뇽
+                </span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
     <!-- footer -->
-    <div>
+    <div style="width: 1060px; height: 85px; margin: 0 auto; overflow: hidden;">
       <div>
-        <div style="width: 1080px; height: 118.9px; padding: 40px 0px">
-          <div>
-            <span style="font-size: 12px; color: white">About OP.GG</span>
-            <span style="font-size: 12px; color: white; margin-left: 16px"
-              >로고 히스토리</span
-            >
-            <span style="font-size: 12px; color: white; margin-left: 16px"
-              ><b>개인정보처리방침</b></span
-            >
-            <span style="font-size: 12px; color: white; margin-left: 16px"
-              >도움말</span
-            >
-            <span style="font-size: 12px; color: white; margin-left: 16px"
-              >제휴</span
-            >
-            <span style="font-size: 12px; color: white; margin-left: 16px"
-              >문의/피드백</span
-            >
-            <span style="font-size: 12px; color: white; margin-left: 16px"
-              >채용</span
-            >
-          </div>
-          <div>
-            <span style="font-size: 12px; color: white"
-              ><b>© 2012-2019 OP.GG. Data based on League of Legends Korea.</b>
-            </span>
-            <i
-              class="fab fa-facebook-square"
-              style="color: white; float: right; margin-left: 10px"
-            ></i>
-            <i
-              class="fab fa-instagram"
-              style="color: white; float: right; margin-left: 10px"
-            ></i>
-            <i class="fab fa-twitter" style="color: white; float: right"></i>
-          </div>
-        </div>
+        <span style="font-size: 12px; color: white">About OP.GG</span>
+        <span style="font-size: 12px; color: white; margin-left: 16px"
+          >로고 히스토리</span
+        >
+        <span style="font-size: 12px; color: white; margin-left: 16px"
+          ><b>개인정보처리방침</b></span
+        >
+        <span style="font-size: 12px; color: white; margin-left: 16px"
+          >도움말</span
+        >
+        <span style="font-size: 12px; color: white; margin-left: 16px"
+          >제휴</span
+        >
+        <span style="font-size: 12px; color: white; margin-left: 16px"
+          >문의/피드백</span
+        >
+        <span style="font-size: 12px; color: white; margin-left: 16px"
+          >채용</span
+        >
+      </div>
+      <div>
+        <span style="font-size: 12px; color: white"
+          ><b>© 2012-2019 OP.GG. Data based on League of Legends Korea.</b>
+        </span>
+        <i
+          class="fab fa-facebook-square"
+          style="color: white; float: right; margin-left: 10px"
+        ></i>
+        <i
+          class="fab fa-instagram"
+          style="color: white; float: right; margin-left: 10px"
+        ></i>
+        <i class="fab fa-twitter" style="color: white; float: right"></i>
       </div>
     </div>
 
