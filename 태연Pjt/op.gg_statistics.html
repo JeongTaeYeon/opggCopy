@@ -14,6 +14,10 @@
           width: 1100px;
         }
       }
+      .full_adjust {
+        position: relative;
+        top: 20px;
+      }
       @media (min-width: 1919px) {
         .full_screen {
           position: relative;
@@ -42,6 +46,55 @@
         .ad_display {
           display: none;
         }
+      }
+      .table_box {
+        height: 165px;
+        border-right: 1px solid rgb(213, 216, 216);
+        float: left;
+      }
+      .table_filter_title {
+        font-size: 89%;
+        color: rgb(85, 94, 94);
+      }
+      .filter_box_sizing {
+        width: 100%;
+        height: 100%;
+        padding-right: 12%;
+        padding-left: 12%;
+        padding-top: 6%;
+      }
+      .radio_button_checked {
+        width: 17px;
+        height: 17px;
+        color: rgb(47, 169, 240);
+      }
+      .radio_button {
+        width: 17px;
+        height: 17px;
+        color: rgb(215, 218, 218);
+      }
+      .filter_text_checked {
+        font-size: 75%;
+        position: relative;
+        left: 6px;
+        bottom: 1px;
+        color: rgb(31, 142, 205);
+        text-decoration: none !important;
+      }
+      .filter_text_checked :hover {
+        color: rgb(31, 142, 205);
+      }
+      .filter_text {
+        font-size: 75%;
+        position: relative;
+        left: 6px;
+        bottom: 1px;
+        color: rgb(135, 146, 146);
+        text-decoration: none !important;
+      }
+
+      .filter_text :hover {
+        color: rgb(74, 74, 74);
       }
     </style>
   </head>
@@ -277,21 +330,260 @@
       >
         <!-- Ad banner -->
         <img
+          class="full_adjust"
           src="https://crcdn01.adnxs.com/creative/p/806/2019/9/16/14149157/ca901b30-d08d-4188-8612-de7938f00e8e.jpg"
-          style="position: relative; top: 20px"
         />
+        <!-- Page description -->
         <div
-          style="width: 100%; height: 140px; padding-top: 28px; position: relative; top: 20px;"
+          class="full_adjust"
+          style="width: 100%; height: 140px; padding-top: 25px;"
         >
-          <div style="width: 100%;">
-            게임통계
+          <div
+            style="width: 100%; height: 53px; border-bottom: 1px solid rgb(215, 218, 218)"
+          >
+            <div
+              style="float: left; padding-bottom: 12px; border-bottom: 1px solid black"
+            >
+              <a
+                href="./op.gg_statistics.html"
+                style="color: rgb(85, 94, 94); font-size: 170%; font-weight: 700; text-decoration: none;"
+              >
+                챔피언별 게임 통계
+              </a>
+            </div>
+            <div
+              style="float: left; padding-bottom: 12px; position: relative; left: 35px;"
+            >
+              <a
+                href="..."
+                style="color:rgb(85, 94, 94); font-size: 170%; text-decoration: none"
+              >
+                티어별 게임 통계
+              </a>
+            </div>
           </div>
-          <div>
-            챔피언별 통계를 볼 수 있습니다
+          <div style="height: 45px; padding-top: 14px;">
+            <span style="font-size: 88%; color: rgb(74, 74, 74)">
+              챔피언별 통계를 볼 수 있습니다.
+            </span>
+          </div>
+        </div>
+        <!-- Filter Table -->
+        <div
+          class="full_adjust"
+          style="width: 100%; height: 200px; border: 1px solid rgb(213, 216, 216)"
+        >
+          <div
+            style="width: 100%; height: 34px; padding-top: 4px; padding-bottom: 4px; border-bottom: 1px solid rgb(213, 216, 216); background-color: rgb(242, 242, 242)"
+          >
+            <span
+              class="table_filter_title"
+              style="position: relative; left: 20px;"
+            >
+              그래프 종류
+            </span>
+            <span
+              class="table_filter_title"
+              style="position: relative; left: 125px;"
+            >
+              리그
+            </span>
+            <span
+              class="table_filter_title"
+              style="position: relative; left: 275px;"
+            >
+              시간
+            </span>
+            <span
+              class="table_filter_title"
+              style="position: relative; left: 440px;"
+            >
+              맵
+            </span>
+            <span
+              class="table_filter_title"
+              style="position: relative; left: 620px;"
+            >
+              큐 타입
+            </span>
+          </div>
+          <!-- 그래프 종류 -->
+          <div class="table_box" style="width: 19%;">
+            <div class="filter_box_sizing">
+              <div style="width: 100%; height: 20px;">
+                <a href="op.gg_statistics.html"
+                  ><i class="far fa-dot-circle radio_button_checked"></i
+                ></a>
+                <a class="filter_text_checked" href="op.gg_statistics.html"
+                  ><span>승률</span></a
+                >
+              </div>
+              <div
+                style="width: 100%; height: 20px; position: relative; top: 6px;"
+              >
+                <a href="..."><i class="far fa-circle radio_button"></i></a>
+                <a class="filter_text" href="..."><span>낮은승률</span></a>
+              </div>
+              <div
+                style="width: 100%; height: 20px; position: relative; top: 12px;"
+              >
+                <a href="..."><i class="far fa-circle radio_button"></i></a>
+                <a class="filter_text" href="..."><span>게임당 픽률</span></a>
+              </div>
+              <div
+                style="width: 100%; height: 20px; position: relative; top: 18px;"
+              >
+                <a href="..."><i class="far fa-circle radio_button"></i></a>
+                <a class="filter_text" href="..."><span>게임당 밴율</span></a>
+              </div>
+            </div>
+          </div>
+          <!-- 리그 -->
+          <div class="table_box" style="width: 19%;">
+            <div class="filter_box_sizing" style="overflow-y: auto">
+              <div style="width: 100%; height: 20px;">
+                <a href="op.gg_statistics.html"
+                  ><i class="far fa-dot-circle radio_button_checked"></i
+                ></a>
+                <a class="filter_text_checked" href="op.gg_statistics.html"
+                  ><span>승률</span></a
+                >
+              </div>
+              <div
+                style="width: 100%; height: 20px; position: relative; top: 6px;"
+              >
+                <a href="..."><i class="far fa-circle radio_button"></i></a>
+                <a class="filter_text" href="..."><span>Iron</span></a>
+              </div>
+              <div
+                style="width: 100%; height: 20px; position: relative; top: 12px;"
+              >
+                <a href="..."><i class="far fa-circle radio_button"></i></a>
+                <a class="filter_text" href="..."><span>Bronze</span></a>
+              </div>
+              <div
+                style="width: 100%; height: 20px; position: relative; top: 18px;"
+              >
+                <a href="..."><i class="far fa-circle radio_button"></i></a>
+                <a class="filter_text" href="..."><span>Silver</span></a>
+              </div>
+              <div
+                style="width: 100%; height: 20px; position: relative; top: 24px;"
+              >
+                <a href="..."><i class="far fa-circle radio_button"></i></a>
+                <a class="filter_text" href="..."><span>Gold</span></a>
+              </div>
+              <div
+                style="width: 100%; height: 20px; position: relative; top: 30px;"
+              >
+                <a href="..."><i class="far fa-circle radio_button"></i></a>
+                <a class="filter_text" href="..."><span>Platinum</span></a>
+              </div>
+              <div
+                style="width: 100%; height: 20px; position: relative; top: 36px;"
+              >
+                <a href="..."><i class="far fa-circle radio_button"></i></a>
+                <a class="filter_text" href="..."><span>Diamond</span></a>
+              </div>
+              <div
+                style="width: 100%; height: 20px; position: relative; top: 42px;"
+              >
+                <a href="..."><i class="far fa-circle radio_button"></i></a>
+                <a class="filter_text" href="..."><span>Master</span></a>
+              </div>
+              <div
+                style="width: 100%; height: 20px; position: relative; top: 48px;"
+              >
+                <a href="..."><i class="far fa-circle radio_button"></i></a>
+                <a class="filter_text" href="..."><span>Grand Master</span></a>
+              </div>
+              <div
+                style="width: 100%; height: 20px; position: relative; top: 54px;"
+              >
+                <a href="..."><i class="far fa-circle radio_button"></i></a>
+                <a class="filter_text" href="..."><span>Challenger</span></a>
+              </div>
+            </div>
+          </div>
+          <!-- 시간 -->
+          <div class="table_box" style="width: 20.5%;">
+            <div class="filter_box_sizing">
+              <div style="width: 100%; height: 20px;">
+                <a href="op.gg_statistics.html"
+                  ><i class="far fa-dot-circle radio_button_checked"></i
+                ></a>
+                <a class="filter_text_checked" href="op.gg_statistics.html"
+                  ><span>최근 1달</span></a
+                >
+              </div>
+              <div
+                style="width: 100%; height: 20px; position: relative; top: 6px;"
+              >
+                <a href="..."><i class="far fa-circle radio_button"></i></a>
+                <a class="filter_text" href="..."><span>최근 7일</span></a>
+              </div>
+              <div
+                style="width: 100%; height: 20px; position: relative; top: 12px;"
+              >
+                <a href="..."><i class="far fa-circle radio_button"></i></a>
+                <a class="filter_text" href="..."><span>오늘</span></a>
+              </div>
+            </div>
+          </div>
+          <!-- 맵 -->
+          <div class="table_box" style="width: 21%;">
+            <div class="filter_box_sizing">
+              <div style="width: 100%; height: 20px;">
+                <a href="op.gg_statistics.html"
+                  ><i class="far fa-dot-circle radio_button_checked"></i
+                ></a>
+                <a class="filter_text_checked" href="op.gg_statistics.html"
+                  ><span>소환사의 협곡</span></a
+                >
+              </div>
+              <div
+                style="width: 100%; height: 20px; position: relative; top: 6px;"
+              >
+                <a href="..."><i class="far fa-circle radio_button"></i></a>
+                <a class="filter_text" href="..."><span>뒤틀린 숲</span></a>
+              </div>
+              <div
+                style="width: 100%; height: 20px; position: relative; top: 12px;"
+              >
+                <a href="..."><i class="far fa-circle radio_button"></i></a>
+                <a class="filter_text" href="..."><span>칼바람 나락</span></a>
+              </div>
+            </div>
+          </div>
+          <!-- 큐 타입 -->
+          <div style="width: 20.5%; height: 165px; float: left;">
+            <div class="filter_box_sizing">
+              <div style="width: 100%; height: 20px;">
+                <a href="op.gg_statistics.html"
+                  ><i class="far fa-dot-circle radio_button_checked"></i
+                ></a>
+                <a class="filter_text_checked" href="op.gg_statistics.html"
+                  ><span>랭크게임</span></a
+                >
+              </div>
+              <div
+                style="width: 100%; height: 20px; position: relative; top: 6px;"
+              >
+                <a href="..."><i class="far fa-circle radio_button"></i></a>
+                <a class="filter_text" href="..."><span>노말</span></a>
+              </div>
+              <div
+                style="width: 100%; height: 20px; position: relative; top: 12px;"
+              >
+                <a href="..."><i class="far fa-circle radio_button"></i></a>
+                <a class="filter_text" href="..."><span>무작위 총력전</span></a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
+
     <!-- Bootstrap -->
     <link
       rel="stylesheet"
