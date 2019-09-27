@@ -96,6 +96,12 @@
       .filter_text :hover {
         color: rgb(74, 74, 74);
       }
+      .statistic_filter_title {
+        height: 100%;
+        font-size: 85%;
+        color: rgb(85, 94, 94);
+        float: left;
+      }
     </style>
   </head>
   <body style="background-color: rgb(234, 234, 234);">
@@ -324,10 +330,7 @@
     />
     <!-- center -->
     <div class="flex">
-      <div
-        class="full_screen"
-        style="width: 970px; height: 2000px; margin: 0 auto;"
-      >
+      <div class="full_screen" style="width: 970px; margin: 0 auto;">
         <!-- Ad banner -->
         <img
           class="full_adjust"
@@ -373,6 +376,7 @@
           class="full_adjust"
           style="width: 100%; height: 200px; border: 1px solid rgb(213, 216, 216)"
         >
+          <!-- Filter Head -->
           <div
             style="width: 100%; height: 34px; padding-top: 4px; padding-bottom: 4px; border-bottom: 1px solid rgb(213, 216, 216); background-color: rgb(242, 242, 242)"
           >
@@ -581,6 +585,105 @@
             </div>
           </div>
         </div>
+        <!-- Statistic Table -->
+        <div
+          class="full_adjust"
+          style="width: 100%; height: 2000px; margin-top: 10px; border: 1px solid rgb(213, 216, 216)"
+        >
+          <div
+            style="width: 100%; height: 43px; border-bottom: 1px solid rgb(213, 216, 216); background-color: rgb(242, 242, 242)"
+          >
+            <div class="statistic_filter_title" style="width: 50px;">
+              <button
+                type="button"
+                style="width: 100%; height: 100%; background-color: rgb(242, 242, 242); border: none;"
+              >
+                <span
+                  style="font-size: 110%; color: rgb(31, 142, 205); position: relative; left: 7px; bottom: 1px;"
+                  >#</span
+                >
+                <i
+                  class="fas fa-caret-up"
+                  style="width: 8px; height: 8px; position: relative; left: 14px; bottom: 5px; color: rgb(31, 142, 205)"
+                ></i>
+              </button>
+            </div>
+            <div class="statistic_filter_title" style="width: 165px;">
+              <button
+                type="button"
+                style="width: 100%; height: 100%; background-color: rgb(242, 242, 242); border: none;"
+              >
+                <span
+                  style="font-size: 110%; color: rgb(85, 94, 94); position: relative; left: 7px; bottom: 1px;"
+                  >#</span
+                >
+                <i
+                  class="fas fa-caret-up"
+                  style="width: 8px; height: 8px; position: relative; left: 14px; bottom: 5px; color: rgb(85, 94, 94)"
+                ></i>
+              </button>
+            </div>
+            <span
+              class="table_filter_title"
+              style="position: relative; left: 275px;"
+            >
+              시간
+            </span>
+            <span
+              class="table_filter_title"
+              style="position: relative; left: 440px;"
+            >
+              맵
+            </span>
+            <span
+              class="table_filter_title"
+              style="position: relative; left: 620px;"
+            >
+              큐 타입
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <div
+      class="full_adjust"
+      style="width: 1060px; height: 85px; margin: 0 auto; overflow: hidden;"
+    >
+      <div>
+        <span style="font-size: 12px; color: white">About OP.GG</span>
+        <span style="font-size: 12px; color: white; margin-left: 16px"
+          >로고 히스토리</span
+        >
+        <span style="font-size: 12px; color: white; margin-left: 16px"
+          ><b>개인정보처리방침</b></span
+        >
+        <span style="font-size: 12px; color: white; margin-left: 16px"
+          >도움말</span
+        >
+        <span style="font-size: 12px; color: white; margin-left: 16px"
+          >제휴</span
+        >
+        <span style="font-size: 12px; color: white; margin-left: 16px"
+          >문의/피드백</span
+        >
+        <span style="font-size: 12px; color: white; margin-left: 16px"
+          >채용</span
+        >
+      </div>
+      <div>
+        <span style="font-size: 12px; color: white"
+          ><b>© 2012-2019 OP.GG. Data based on League of Legends Korea.</b>
+        </span>
+        <i
+          class="fab fa-facebook-square"
+          style="color: white; float: right; margin-left: 10px"
+        ></i>
+        <i
+          class="fab fa-instagram"
+          style="color: white; float: right; margin-left: 10px"
+        ></i>
+        <i class="fab fa-twitter" style="color: white; float: right"></i>
       </div>
     </div>
 
