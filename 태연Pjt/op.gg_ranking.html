@@ -183,7 +183,6 @@
         font-weight: 650;
         color: rgb(45, 175, 127);
         position: relative;
-
         left: 10px;
         top: 10px;
       }
@@ -201,13 +200,134 @@
         font-weight: 650;
         color: rgb(246, 175, 46);
         position: relative;
-
         left: 10px;
         top: 10px;
       }
       .footer_text {
         font-size: 12px;
         margin-left: 16px;
+      }
+      .top5_1st_box {
+        width: 650px;
+        height: 200px;
+        margin: 0 auto;
+        border: 5px solid rgb(189, 187, 187);
+        background-color: white;
+      }
+      .top5_1st {
+        width: 110px;
+        height: 110px;
+        position: relative;
+        bottom: 40px;
+      }
+      .top5_1st_icon {
+        width: 100px;
+        height: 100px;
+        position: relative;
+        top: 50px;
+        left: 10px;
+      }
+      .top5_1st_level {
+        float: left;
+        width: 37px;
+        height: 23px;
+        position: relative;
+        bottom: 124px;
+        left: 42.5px;
+        border: 1px solid rgb(231, 188, 112);
+        background-color: rgb(40, 59, 75);
+        border-radius: 2px;
+        text-align: center;
+      }
+      .winorlose_rate {
+        width: 150px;
+        height: 20px;
+      }
+      .win_rate {
+        height: 100%;
+        float: left;
+        background-color: rgb(61, 149, 229);
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+      }
+      .lose_rate {
+        height: 100%;
+        float: left;
+        background-color: rgb(238, 90, 82);
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+      }
+      .top5_1st_championimg {
+        width: 34px;
+        height: 34px;
+        border-radius: 17px;
+        position: relative;
+        top: 5px;
+        left: 2.5px;
+      }
+      .top5_1st_championtexts {
+        font-size: 78%;
+        position: relative;
+        top: 5px;
+        left: 4px;
+      }
+      .top5_boxes {
+        width: 220px;
+        height: 188px;
+        border: 2px solid rgb(189, 187, 187);
+        background-color: white;
+        float: left;
+        position: relative;
+        top: 28px;
+      }
+      .top5_numbox {
+        width: 28px;
+        height: 28px;
+        background-color: rgb(189, 187, 187);
+        text-align: center;
+        float: left;
+      }
+      .top5_num {
+        color: white;
+        font-size: 130%;
+        font-weight: 600;
+        position: relative;
+        bottom: 3px;
+        right: 1px;
+      }
+      .top5_summoner_img {
+        width: 50px;
+        position: relative;
+        top: 24px;
+        margin: 0 auto;
+      }
+      .top5_summoner_id {
+        width: 120px;
+        position: relative;
+        top: 24px;
+        margin: 0 auto;
+        text-align: center;
+      }
+      .top5_summoner_lv {
+        width: 120px;
+        position: relative;
+        top: 20px;
+        margin: 0 auto;
+        text-align: center;
+      }
+      .top5_summoner_tier {
+        width: 80%;
+        position: relative;
+        top: 20px;
+        margin: 0 auto;
+        text-align: center;
+      }
+      .top5_summoner_winloserate {
+        width: 83%;
+        position: relative;
+        top: 25px;
+        margin: 0 auto;
+        text-align: center;
       }
     </style>
   </head>
@@ -285,7 +405,7 @@
             <button
               class="btn"
               type="button"
-              style="padding: 0; padding-top: 4px; padding-bottom: 4px; height: 65%; width: 65px; background-color: rgb(83, 131, 232); color: white; font-size: 85%; position:"
+              style="padding: 0; padding-top: 4px; padding-bottom: 4px; height: 65%; width: 65px; background-color: rgb(83, 131, 232); color: white; font-size: 85%;"
             >
               <span style="position: relative; bottom: 2px">로그인</span>
             </button>
@@ -481,1100 +601,586 @@
                 레벨
               </a>
             </div>
-            <div style="width: 285px; height: 37px; float: right; position: relative; top: 5px;">
-              <input placeholder="   소환사명" style="width: 195px; height: 100%; border: 1px solid rgb(213, 216, 216); font-size: 85%; font-weight: lighter"/>
-              <button style="width: 83px; height: 100%; font-size: 80%; position: relative; left: 4px; background-color: rgb(31, 142, 205); 
-              border: 1px solid rgb(26, 120, 174); border-radius: 2px; color:white">랭킹검색</button>
+            <div
+              style="width: 285px; height: 37px; float: right; position: relative; top: 5px;"
+            >
+              <input
+                placeholder="   소환사명"
+                style="width: 195px; height: 100%; border: 1px solid rgb(213, 216, 216); font-size: 85%; font-weight: lighter"
+              />
+              <button
+                style="width: 83px; height: 100%; font-size: 80%; position: relative; left: 4px; background-color: rgb(31, 142, 205); 
+              border: 1px solid rgb(26, 120, 174); border-radius: 2px; color:white"
+              >
+                랭킹검색
+              </button>
             </div>
           </div>
           <div style="height: 45px; padding-top: 14px;">
             <span style="font-size: 88%; color: rgb(74, 74, 74)">
-                소환사의 협곡에 총 3,638,198명의 소환사가 있습니다.
+              소환사의 협곡에 총 3,638,198명의 소환사가 있습니다.
             </span>
-            <span style="font-size: 75%; color: rgb(155, 155, 155); float: right; position: relative; top: 3px;">
-                랭킹은 브론즈 이상 소환사만 표시. 랭킹은 주기적으로 갱신됩니다.
+            <span
+              style="font-size: 75%; color: rgb(155, 155, 155); float: right; position: relative; top: 3px;"
+            >
+              랭킹은 브론즈 이상 소환사만 표시. 랭킹은 주기적으로 갱신됩니다.
             </span>
           </div>
         </div>
-        <!-- Filter Table -->
-        <div
-          class="full_adjust"
-          style="width: 100%; height: 200px; border: 1px solid rgb(213, 216, 216)"
-        >
-          <!-- Filter Head -->
-          <div
-            style="width: 100%; height: 34px; padding-top: 4px; padding-bottom: 4px; border-bottom: 1px solid rgb(213, 216, 216); background-color: rgb(242, 242, 242)"
-          >
-            <span
-              class="table_filter_title"
-              style="position: relative; left: 20px;"
-            >
-              그래프 종류
-            </span>
-            <span
-              class="table_filter_title"
-              style="position: relative; left: 125px;"
-            >
-              리그
-            </span>
-            <span
-              class="table_filter_title"
-              style="position: relative; left: 275px;"
-            >
-              시간
-            </span>
-            <span
-              class="table_filter_title"
-              style="position: relative; left: 440px;"
-            >
-              맵
-            </span>
-            <span
-              class="table_filter_title"
-              style="position: relative; left: 620px;"
-            >
-              큐 타입
-            </span>
-          </div>
-          <!-- 그래프 종류 -->
-          <div class="table_box" style="width: 19%;">
-            <div class="filter_box_sizing">
-              <div style="width: 100%; height: 20px;">
-                <a href="op.gg_statistics.html"
-                  ><i class="far fa-dot-circle radio_button_checked"></i
-                ></a>
-                <a class="filter_text_checked" href="op.gg_statistics.html"
-                  ><span>승률</span></a
-                >
-              </div>
-              <div
-                style="width: 100%; height: 20px; position: relative; top: 6px;"
-              >
-                <a href="..."><i class="far fa-circle radio_button"></i></a>
-                <a class="filter_text" href="..."><span>낮은승률</span></a>
-              </div>
-              <div
-                style="width: 100%; height: 20px; position: relative; top: 12px;"
-              >
-                <a href="..."><i class="far fa-circle radio_button"></i></a>
-                <a class="filter_text" href="..."><span>게임당 픽률</span></a>
-              </div>
-              <div
-                style="width: 100%; height: 20px; position: relative; top: 18px;"
-              >
-                <a href="..."><i class="far fa-circle radio_button"></i></a>
-                <a class="filter_text" href="..."><span>게임당 밴율</span></a>
-              </div>
-            </div>
-          </div>
-          <!-- 리그 -->
-          <div class="table_box" style="width: 19%;">
-            <div class="filter_box_sizing" style="overflow-y: auto">
-              <div style="width: 100%; height: 20px;">
-                <a href="op.gg_statistics.html"
-                  ><i class="far fa-dot-circle radio_button_checked"></i
-                ></a>
-                <a class="filter_text_checked" href="op.gg_statistics.html"
-                  ><span>승률</span></a
-                >
-              </div>
-              <div
-                style="width: 100%; height: 20px; position: relative; top: 6px;"
-              >
-                <a href="..."><i class="far fa-circle radio_button"></i></a>
-                <a class="filter_text" href="..."><span>Iron</span></a>
-              </div>
-              <div
-                style="width: 100%; height: 20px; position: relative; top: 12px;"
-              >
-                <a href="..."><i class="far fa-circle radio_button"></i></a>
-                <a class="filter_text" href="..."><span>Bronze</span></a>
-              </div>
-              <div
-                style="width: 100%; height: 20px; position: relative; top: 18px;"
-              >
-                <a href="..."><i class="far fa-circle radio_button"></i></a>
-                <a class="filter_text" href="..."><span>Silver</span></a>
-              </div>
-              <div
-                style="width: 100%; height: 20px; position: relative; top: 24px;"
-              >
-                <a href="..."><i class="far fa-circle radio_button"></i></a>
-                <a class="filter_text" href="..."><span>Gold</span></a>
-              </div>
-              <div
-                style="width: 100%; height: 20px; position: relative; top: 30px;"
-              >
-                <a href="..."><i class="far fa-circle radio_button"></i></a>
-                <a class="filter_text" href="..."><span>Platinum</span></a>
-              </div>
-              <div
-                style="width: 100%; height: 20px; position: relative; top: 36px;"
-              >
-                <a href="..."><i class="far fa-circle radio_button"></i></a>
-                <a class="filter_text" href="..."><span>Diamond</span></a>
-              </div>
-              <div
-                style="width: 100%; height: 20px; position: relative; top: 42px;"
-              >
-                <a href="..."><i class="far fa-circle radio_button"></i></a>
-                <a class="filter_text" href="..."><span>Master</span></a>
-              </div>
-              <div
-                style="width: 100%; height: 20px; position: relative; top: 48px;"
-              >
-                <a href="..."><i class="far fa-circle radio_button"></i></a>
-                <a class="filter_text" href="..."><span>Grand Master</span></a>
-              </div>
-              <div
-                style="width: 100%; height: 20px; position: relative; top: 54px;"
-              >
-                <a href="..."><i class="far fa-circle radio_button"></i></a>
-                <a class="filter_text" href="..."><span>Challenger</span></a>
-              </div>
-            </div>
-          </div>
-          <!-- 시간 -->
-          <div class="table_box" style="width: 20.5%;">
-            <div class="filter_box_sizing">
-              <div style="width: 100%; height: 20px;">
-                <a href="op.gg_statistics.html"
-                  ><i class="far fa-dot-circle radio_button_checked"></i
-                ></a>
-                <a class="filter_text_checked" href="op.gg_statistics.html"
-                  ><span>최근 1달</span></a
-                >
-              </div>
-              <div
-                style="width: 100%; height: 20px; position: relative; top: 6px;"
-              >
-                <a href="..."><i class="far fa-circle radio_button"></i></a>
-                <a class="filter_text" href="..."><span>최근 7일</span></a>
-              </div>
-              <div
-                style="width: 100%; height: 20px; position: relative; top: 12px;"
-              >
-                <a href="..."><i class="far fa-circle radio_button"></i></a>
-                <a class="filter_text" href="..."><span>오늘</span></a>
-              </div>
-            </div>
-          </div>
-          <!-- 맵 -->
-          <div class="table_box" style="width: 21%;">
-            <div class="filter_box_sizing">
-              <div style="width: 100%; height: 20px;">
-                <a href="op.gg_statistics.html"
-                  ><i class="far fa-dot-circle radio_button_checked"></i
-                ></a>
-                <a class="filter_text_checked" href="op.gg_statistics.html"
-                  ><span>소환사의 협곡</span></a
-                >
-              </div>
-              <div
-                style="width: 100%; height: 20px; position: relative; top: 6px;"
-              >
-                <a href="..."><i class="far fa-circle radio_button"></i></a>
-                <a class="filter_text" href="..."><span>뒤틀린 숲</span></a>
-              </div>
-              <div
-                style="width: 100%; height: 20px; position: relative; top: 12px;"
-              >
-                <a href="..."><i class="far fa-circle radio_button"></i></a>
-                <a class="filter_text" href="..."><span>칼바람 나락</span></a>
-              </div>
-            </div>
-          </div>
-          <!-- 큐 타입 -->
-          <div style="width: 20.5%; height: 165px; float: left;">
-            <div class="filter_box_sizing">
-              <div style="width: 100%; height: 20px;">
-                <a href="op.gg_statistics.html"
-                  ><i class="far fa-dot-circle radio_button_checked"></i
-                ></a>
-                <a class="filter_text_checked" href="op.gg_statistics.html"
-                  ><span>랭크게임</span></a
-                >
-              </div>
-              <div
-                style="width: 100%; height: 20px; position: relative; top: 6px;"
-              >
-                <a href="..."><i class="far fa-circle radio_button"></i></a>
-                <a class="filter_text" href="..."><span>노말</span></a>
-              </div>
-              <div
-                style="width: 100%; height: 20px; position: relative; top: 12px;"
-              >
-                <a href="..."><i class="far fa-circle radio_button"></i></a>
-                <a class="filter_text" href="..."><span>무작위 총력전</span></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Statistic Table -->
-        <div
-          class="full_adjust"
-          style="width: 100%; height: 6569px; margin-top: 10px; border: 1px solid rgb(213, 216, 216)"
-        >
-          <!-- Table Head -->
-          <div
-            style="width: 100%; height: 43px; border-bottom: 1px solid rgb(213, 216, 216); background-color: rgb(242, 242, 242)"
-          >
-            <div class="statistic_filter_title" style="width: 50px;">
-              <button
-                type="button"
-                style="width: 100%; height: 100%; background-color: rgb(242, 242, 242); border: none;"
-              >
-                <span
-                  style="font-size: 110%; color: rgb(31, 142, 205); position: relative; left: 7px; bottom: 1px;"
-                  >#</span
-                >
-                <i
-                  class="fas fa-caret-up"
-                  style="width: 8px; height: 8px; position: relative; left: 14px; bottom: 5px; color: rgb(31, 142, 205)"
-                ></i>
-              </button>
-            </div>
-            <div class="statistic_filter_title" style="width: 169px;">
-              <button
-                type="button"
-                style="width: 100%; height: 100%; background-color: rgb(242, 242, 242); border: none;"
-              >
-                <span
-                  style="font-size: 93%; color: rgb(85, 94, 94); float: left; position: relative; right: 3px;"
-                  >챔피언</span
-                >
-                <i
-                  class="fas fa-caret-up"
-                  style="width: 8px; height: 8px; position: relative; top: 3px; color: rgb(126, 138, 138); float: right"
-                ></i>
-                <i
-                  class="fas fa-caret-down"
-                  style="width: 8px; height: 8px; position: relative; left: 60px; bottom: 3px; color: rgb(126, 138, 138);"
-                ></i>
-              </button>
-            </div>
-            <div class="statistic_filter_title" style="width: 169px;">
-              <button
-                type="button"
-                style="width: 100%; height: 100%; background-color: rgb(242, 242, 242); border: none;"
-              >
-                <span
-                  style="font-size: 93%; color: rgb(85, 94, 94); float: left;"
-                  >승률</span
-                >
-                <i
-                  class="fas fa-caret-up"
-                  style="width: 8px; height: 8px; position: relative; top: 3px; color: rgb(126, 138, 138); float: right"
-                ></i>
-                <i
-                  class="fas fa-caret-down"
-                  style="width: 8px; height: 8px; position: relative; left: 66px; bottom: 3px; color: rgb(126, 138, 138);"
-                ></i>
-              </button>
-            </div>
-            <div class="statistic_filter_title" style="width: 138px;">
-              <button
-                type="button"
-                style="width: 100%; height: 100%; background-color: rgb(242, 242, 242); border: none;"
-              >
-                <span
-                  style="font-size: 93%; color: rgb(85, 94, 94); float: left; position: relative; left: 5px;"
-                  >플레이수</span
-                >
-                <i
-                  class="fas fa-caret-up"
-                  style="width: 8px; height: 8px; position: relative; top: 3px; color: rgb(126, 138, 138); float: right"
-                ></i>
-                <i
-                  class="fas fa-caret-down"
-                  style="width: 8px; height: 8px; position: relative; left: 38px; bottom: 3px; color: rgb(126, 138, 138);"
-                ></i>
-              </button>
-            </div>
-            <div class="statistic_filter_title" style="width: 132px;">
-              <button
-                type="button"
-                style="width: 100%; height: 100%; background-color: rgb(242, 242, 242); border: none;"
-              >
-                <span
-                  style="font-size: 93%; color: rgb(85, 94, 94); float: left;"
-                  >평점</span
-                >
-                <i
-                  class="fas fa-caret-up"
-                  style="width: 8px; height: 8px; position: relative; top: 3px; color: rgb(126, 138, 138); float: right"
-                ></i>
-                <i
-                  class="fas fa-caret-down"
-                  style="width: 8px; height: 8px; position: relative; left: 48px; bottom: 3px; color: rgb(126, 138, 138);"
-                ></i>
-              </button>
-            </div>
-            <div class="statistic_filter_title" style="width: 152px;">
-              <button
-                type="button"
-                style="width: 100%; height: 100%; background-color: rgb(242, 242, 242); border: none;"
-              >
-                <span
-                  style="font-size: 100%; color: rgb(85, 94, 94); float: left; position: relative; bottom: 2px;"
-                  >CS</span
-                >
-                <i
-                  class="fas fa-caret-up"
-                  style="width: 8px; height: 8px; position: relative; top: 3px; color: rgb(126, 138, 138); float: right"
-                ></i>
-                <i
-                  class="fas fa-caret-down"
-                  style="width: 8px; height: 8px; position: relative; left: 63px; bottom: 3px; color: rgb(126, 138, 138);"
-                ></i>
-              </button>
-            </div>
-            <div class="statistic_filter_title" style="width: 158px;">
-              <button
-                type="button"
-                style="width: 100%; height: 100%; background-color: rgb(242, 242, 242); border: none;"
-              >
-                <span
-                  style="font-size: 93%; color: rgb(85, 94, 94); float: left;"
-                  >골드</span
-                >
-                <i
-                  class="fas fa-caret-up"
-                  style="width: 8px; height: 8px; position: relative; top: 3px; color: rgb(126, 138, 138); float: right; position: relative; right: 5px"
-                ></i>
-                <i
-                  class="fas fa-caret-down"
-                  style="width: 8px; height: 8px; position: relative; left: 56px; bottom: 3px; color: rgb(126, 138, 138);"
-                ></i>
-              </button>
-            </div>
-          </div>
-          <!-- Statistics -->
+        <!-- Top5 -->
+        <div class="full_adjust" style="width: 100%; height: 415px;">
           <!-- #1 -->
-          <div
-            class="statistics_box"
-            style="background-color: rgb(253, 242, 210)"
-          >
-            <div class="statistics_number" style="width: 50px;">
-              <span style="color:rgb(135, 146, 146)">1</span>
+          <div class="top5_1st_box">
+            <div
+              style="width: 25px; height: 25px; background-color: rgb(189, 187, 187); text-align: center; float: left;"
+            >
+              <span
+                style="color: white; font-size: 110%; font-weight: 600; position: relative; bottom: 3px; right: 1px"
+                >1</span
+              >
             </div>
-            <div class="statistic_filter_title" style="width: 169px;">
-              <a href="https://www.op.gg/champion/jinx/statistics/bot">
+            <!-- 초상화 -->
+            <div
+              style="float: left; width: 120px; height: 120px; position: relative; left: 6px; top: 27px;"
+            >
+              <a
+                class="top5_1st"
+                href="https://www.op.gg/summoner/userName=ccccco"
+                target="_self"
+              >
+                <img
+                  class="top5_1st_icon"
+                  src="//opgg-static.akamaized.net/images/profile_icons/profileIcon29.jpg"
+                />
+                <img
+                  src="//opgg-static.akamaized.net/images/borders2/challenger.png"
+                  style="position: relative; bottom: 60px;"
+                />
+              </a>
+              <div class="top5_1st_level">
+                <span
+                  style="font-size: 78%; font-weight: 500; color: rgb(231, 188, 112); position: relative; bottom: 3px;"
+                  >80</span
+                >
+              </div>
+            </div>
+            <div
+              style="width: 480px; height: 65%; float: right; padding-right: 35px; position: relative; top: 30px"
+            >
+              <!-- 우측 Data -->
+              <div style="height: 100%; width: 200px; float: right;">
+                <div style="height: 33.3%">
+                  <img
+                    class="top5_1st_championimg"
+                    src="https://opgg-static.akamaized.net/images/lol/champion/Kaisa.png?image=w_140&v=1"
+                  />
+                  <span
+                    class="top5_1st_championtexts"
+                    style="color: rgb(74, 74, 74)"
+                    >57% (88승 66패)</span
+                  >
+                  <span
+                    class="top5_1st_championtexts"
+                    style="font-weight: 600; color:rgb(45, 175, 127)"
+                    >3.81:1</span
+                  >
+                  <span
+                    class="top5_1st_championtexts"
+                    style="color: rgb(74, 74, 74)"
+                  >
+                    평점</span
+                  >
+                </div>
+                <div style="height: 33.3%">
+                  <img
+                    class="top5_1st_championimg"
+                    src="https://opgg-static.akamaized.net/images/lol/champion/Ezreal.png?image=w_140&v=1"
+                  />
+                  <span
+                    class="top5_1st_championtexts"
+                    style="color: rgb(198, 68, 62)"
+                    >65%</span
+                  >
+                  <span
+                    class="top5_1st_championtexts"
+                    style="color: rgb(74, 74, 74)"
+                  >
+                    (78승 42패)</span
+                  >
+                  <span
+                    class="top5_1st_championtexts"
+                    style="font-weight: 600; color:rgb(45, 175, 127)"
+                    >3.49:1</span
+                  >
+                  <span
+                    class="top5_1st_championtexts"
+                    style="color: rgb(74, 74, 74)"
+                  >
+                    평점</span
+                  >
+                </div>
+                <div style="height: 33.3%">
+                  <img
+                    class="top5_1st_championimg"
+                    src="https://opgg-static.akamaized.net/images/lol/champion/Lucian.png?image=w_140&v=1"
+                  />
+                  <span
+                    class="top5_1st_championtexts"
+                    style="color: rgb(74, 74, 74)"
+                    >56% (47승 37패)</span
+                  >
+                  <span
+                    class="top5_1st_championtexts"
+                    style="font-weight: 600; color:rgb(45, 175, 127)"
+                    >3.69:1</span
+                  >
+                  <span
+                    class="top5_1st_championtexts"
+                    style="color: rgb(74, 74, 74)"
+                  >
+                    평점</span
+                  >
+                </div>
+              </div>
+              <!-- 가운데 Data -->
+              <a
+                href="https://www.op.gg/summoner/userName=ccccco"
+                style="font-size: 140%; font-weight: 700; position: relative; top: 5px; left: 2px; text-decoration: none !important; color: black"
+              >
+                ccccco
+              </a>
               <img
-                class="statistics_img"
-                src="https://opgg-static.akamaized.net/images/lol/champion/Jinx.png?image=w_140&v=1"
-              /></a>
-              <a href="https://www.op.gg/champion/jinx/statistics/bot" style="text-decoration: none"><span class="statistics_champion">징크스</span></a>
-            </div>
-            <div class="statistic_filter_title" style="width: 169px;">
-              <div class="statistics_win_rate_bar" style="width: 62%;"></div>
-              <span class="statistics_win_rate">53.21%</span>
-            </div>
-            <div class="statistic_filter_title" style="width: 138px;">
-              <span class="statistics_playtime">622,014</span>
-            </div>
-            <div class="statistic_filter_title" style="width: 132px;">
-              <span class="statistics_kda">
-                2.58:1
-              </span>
-            </div>
-            <div class="statistic_filter_title" style="width: 152px;">
-              <div class="statistics_cs_bar" style="width: 58%;"></div>
-              <span class="statistics_cs_value">188.22</span>
-            </div>
-            <div class="statistic_filter_title" style="width: 158px;">
-              <div class="statistics_gold_bar" style="width: 58%;"></div>
-              <span class="statistics_gold_value">11,908</span>
+                src="https://opgg-static.akamaized.net/images/medals/challenger_1.png"
+                style="width: 33px; height: 33px; position: relative; top: 44px; right: 72px"
+              />
+              <span
+                style="font-size: 90%; color:rgb(85, 94, 94); position: relative; top: 45px; right: 75px"
+                >Challenger</span
+              >
+              <span
+                style="font-size: 90%; font-weight: bold; color:rgb(85, 94, 94); position: relative; top: 45px; right: 79px"
+                >1,470 LP</span
+              >
+              <div
+                class="winorlose_rate"
+                style="position: relative; top: 49px;"
+              >
+                <div class="win_rate" style="width: 59%;">
+                  <span
+                    style="font-size: 75%; font-weight: 600; color: white; position: relative; left: 10px; bottom: 4px;"
+                    >391</span
+                  >
+                </div>
+                <div class="lose_rate" style="width: 41%;">
+                  <span
+                    style="font-size: 75%; font-weight: 600; color: white; position: relative; left: 33px; bottom: 4px;"
+                  >
+                    277
+                  </span>
+                </div>
+              </div>
+              <span
+                style="font-size: 80%; float: right; position: relative; top: 28px; right: 58px"
+                >59%</span
+              >
             </div>
           </div>
           <!-- #2 -->
-          <div
-            class="statistics_box"
-            style="background-color: rgb(253, 242, 210)"
-          >
-            <div class="statistics_number" style="width: 50px;">
-              <span style="color:rgb(135, 146, 146)">2</span>
+          <div class="top5_boxes">
+            <div class="top5_numbox">
+              <span class="top5_num">2</span>
             </div>
-            <div class="statistic_filter_title" style="width: 169px;">
-              <a href="https://www.op.gg/champion/yorick/statistics/top">
+            <div class="top5_summoner_img">
+              <a
+                href="https://www.op.gg/summoner/userName=%EC%98%A4%EB%A6%AC%EC%A7%80%EB%84%90%EC%B0%B0%EB%96%A1%EC%BF%A0%ED%82%A4"
+              >
+                <img
+                  style="width: 50px; height: 50px; border-radius: 25px;"
+                  src="http://pds.joins.com/news/component/moneytoday/201509/23/2015092220221498877_1.jpg"
+                />
+              </a>
+            </div>
+            <div class="top5_summoner_id">
+              <a
+                href="https://www.op.gg/summoner/userName=%EC%98%A4%EB%A6%AC%EC%A7%80%EB%84%90%EC%B0%B0%EB%96%A1%EC%BF%A0%ED%82%A4"
+                style="text-decoration: none"
+              >
+                <span
+                  style="font-size: 88%; font-weight: 600; color: rgb(68, 75, 75);"
+                  >오리지널찰떡쿠키</span
+                ></a
+              >
+            </div>
+            <div class="top5_summoner_lv">
+              <span style="font-size: 78%; color: rgb(102, 102, 102)"
+                >Lv.95</span
+              >
+            </div>
+            <div class="top5_summoner_tier">
               <img
-                class="statistics_img"
-                src="https://opgg-static.akamaized.net/images/lol/champion/Yorick.png?image=w_140&v=1"
-              /></a>
-              <a href="https://www.op.gg/champion/yorick/statistics/top" style="text-decoration: none"><span class="statistics_champion">요릭</span></a>
+                src="https://opgg-static.akamaized.net/images/medals/challenger_1.png"
+                style="width: 25px; height: 25px; position: relative; left: 4px"
+              />
+              <span style="font-size: 77%; color:rgb(102, 102, 102);"
+                >Challenger</span
+              >
+              <span
+                style="font-size: 74%; font-weight: bold; color:rgb(85, 94, 94); position: relative; right: 4px;"
+                >1,469 LP</span
+              >
             </div>
-            <div class="statistic_filter_title" style="width: 169px;">
-              <div class="statistics_win_rate_bar" style="width: 62%;"></div>
-              <span class="statistics_win_rate">53.13%</span>
-            </div>
-            <div class="statistic_filter_title" style="width: 138px;">
-              <span class="statistics_playtime">47,281</span>
-            </div>
-            <div class="statistic_filter_title" style="width: 132px;">
-              <span class="statistics_kda">
-                1.88:1
-              </span>
-            </div>
-            <div class="statistic_filter_title" style="width: 152px;">
-              <div class="statistics_cs_bar" style="width: 57%;"></div>
-              <span class="statistics_cs_value">183.91</span>
-            </div>
-            <div class="statistic_filter_title" style="width: 158px;">
-              <div class="statistics_gold_bar" style="width: 55%;"></div>
-              <span class="statistics_gold_value">11,184</span>
+            <div class="top5_summoner_winloserate">
+              <div class="winorlose_rate">
+                <div class="win_rate" style="width: 59%;">
+                  <span
+                    style="font-size: 74%; font-weight: 700; color: white; position: relative; right: 26px; bottom: 4px;"
+                    >313</span
+                  >
+                </div>
+                <div class="lose_rate" style="width: 41%;">
+                  <span
+                    style="font-size: 74%; font-weight: 700; color: white; position: relative; left: 13px; bottom: 4px;"
+                  >
+                    220
+                  </span>
+                </div>
+              </div>
+              <span
+                style="font-size: 85%; float: right; position: relative; left: 7px; bottom: 21px;"
+                >59%</span
+              >
             </div>
           </div>
           <!-- #3 -->
-          <div
-            class="statistics_box"
-            style="background-color: rgb(253, 242, 210)"
-          >
-            <div class="statistics_number" style="width: 50px;">
-              <span style="color:rgb(135, 146, 146)">3</span>
+          <div class="top5_boxes" style="margin-left: 30px;">
+            <div class="top5_numbox">
+              <span class="top5_num">3</span>
             </div>
-            <div class="statistic_filter_title" style="width: 169px;">
-              <a href="https://www.op.gg/champion/kled/statistics/top">
+            <div class="top5_summoner_img">
+              <a
+                href="https://www.op.gg/summoner/userName=%EB%A3%94%EB%93%9C%EC%BB%B5"
+              >
+                <img
+                  style="width: 50px; height: 50px; border-radius: 25px;"
+                  src="https://4.bp.blogspot.com/-nH7y7wC3r_g/WrWToolspxI/AAAAAAAA8F0/JVKYguUVuGY53Ttpr0-J6QfWHDw7CruaACLcBGAs/s1600/3383.jpg"
+                />
+              </a>
+            </div>
+            <div class="top5_summoner_id">
+              <a
+                href="https://www.op.gg/summoner/userName=%EB%A3%94%EB%93%9C%EC%BB%B5"
+                style="text-decoration: none"
+              >
+                <span
+                  style="font-size: 88%; font-weight: 600; color: rgb(68, 75, 75);"
+                  >룔드컵</span
+                ></a
+              >
+            </div>
+            <div class="top5_summoner_lv">
+              <span style="font-size: 78%; color: rgb(102, 102, 102)"
+                >Lv.161</span
+              >
+            </div>
+            <div class="top5_summoner_tier">
               <img
-                class="statistics_img"
-                src="https://opgg-static.akamaized.net/images/lol/champion/Kled.png?image=w_140&v=1"
-              /></a>
-              <a href="https://www.op.gg/champion/kled/statistics/top" style="text-decoration: none"><span class="statistics_champion">클레드</span></a>
+                src="https://opgg-static.akamaized.net/images/medals/challenger_1.png"
+                style="width: 25px; height: 25px; position: relative; left: 4px"
+              />
+              <span style="font-size: 77%; color:rgb(102, 102, 102);"
+                >Challenger</span
+              >
+              <span
+                style="font-size: 74%; font-weight: bold; color:rgb(85, 94, 94); position: relative; right: 4px;"
+                >1,367 LP</span
+              >
             </div>
-            <div class="statistic_filter_title" style="width: 169px;">
-              <div class="statistics_win_rate_bar" style="width: 62%;"></div>
-              <span class="statistics_win_rate">52.95%</span>
-            </div>
-            <div class="statistic_filter_title" style="width: 138px;">
-              <span class="statistics_playtime">130,625</span>
-            </div>
-            <div class="statistic_filter_title" style="width: 132px;">
-              <span class="statistics_kda">
-                2.53:1
-              </span>
-            </div>
-            <div class="statistic_filter_title" style="width: 152px;">
-              <div class="statistics_cs_bar" style="width: 48%;"></div>
-              <span class="statistics_cs_value">154.00</span>
-            </div>
-            <div class="statistic_filter_title" style="width: 158px;">
-              <div class="statistics_gold_bar" style="width: 53%;"></div>
-              <span class="statistics_gold_value">10,938</span>
+            <div class="top5_summoner_winloserate">
+              <div class="winorlose_rate">
+                <div class="win_rate" style="width: 56%;">
+                  <span
+                    style="font-size: 74%; font-weight: 700; color: white; position: relative; right: 26px; bottom: 4px;"
+                    >305</span
+                  >
+                </div>
+                <div class="lose_rate" style="width: 44%;">
+                  <span
+                    style="font-size: 74%; font-weight: 700; color: white; position: relative; left: 13px; bottom: 4px;"
+                  >
+                    242
+                  </span>
+                </div>
+              </div>
+              <span
+                style="font-size: 85%; float: right; position: relative; left: 7px; bottom: 21px;"
+                >56%</span
+              >
             </div>
           </div>
           <!-- #4 -->
-          <div
-            class="statistics_box"
-            style="background-color: rgb(253, 242, 210)"
-          >
-            <div class="statistics_number" style="width: 50px;">
-              <span style="color:rgb(135, 146, 146)">4</span>
-            </div>
-            <div class="statistic_filter_title" style="width: 169px;">
-              <a href="https://www.op.gg/champion/drmundo/statistics/jungle">
-              <img
-                class="statistics_img"
-                src="https://opgg-static.akamaized.net/images/lol/champion/DrMundo.png?image=w_140&v=1"
-              /></a>
-              <a href="https://www.op.gg/champion/drmundo/statistics/jungle" style="text-decoration: none"><span class="statistics_champion">문도 박사</span></a>
-            </div>
-            <div class="statistic_filter_title" style="width: 169px;">
-              <div class="statistics_win_rate_bar" style="width: 62%;"></div>
-              <span class="statistics_win_rate">52.94%</span>
-            </div>
-            <div class="statistic_filter_title" style="width: 138px;">
-              <span class="statistics_playtime">394,925</span>
-            </div>
-            <div class="statistic_filter_title" style="width: 132px;">
-              <span class="statistics_kda">
-                2.46:1
-              </span>
-            </div>
-            <div class="statistic_filter_title" style="width: 152px;">
-              <div class="statistics_cs_bar" style="width: 50%;"></div>
-              <span class="statistics_cs_value">159.77</span>
-            </div>
-            <div class="statistic_filter_title" style="width: 158px;">
-              <div class="statistics_gold_bar" style="width: 53%;"></div>
-              <span class="statistics_gold_value">11,052</span>
-            </div>
+          <div class="top5_boxes" style="margin-left: 30px;"">
+          <div class="top5_numbox">
+            <span class="top5_num">4</span>
           </div>
-          <!-- #5 -->
-          <div
-            class="statistics_box"
-            style="background-color: rgb(253, 242, 210)"
-          >
-            <div class="statistics_number" style="width: 50px;">
-              <span style="color:rgb(135, 146, 146)">5</span>
-            </div>
-            <div class="statistic_filter_title" style="width: 169px;">
-              <a href="https://www.op.gg/champion/malzahar/statistics/mid">
+          <div class="top5_summoner_img">
+            <a href="https://www.op.gg/summoner/userName=Hide+on+bush">
               <img
-                class="statistics_img"
-                src="https://opgg-static.akamaized.net/images/lol/champion/Malzahar.png?image=w_140&v=1"
-              /></a>
-              <a href="https://www.op.gg/champion/malzahar/statistics/mid" style="text-decoration: none"><span class="statistics_champion">말자하</span></a>
-            </div>
-            <div class="statistic_filter_title" style="width: 169px;">
-              <div class="statistics_win_rate_bar" style="width: 62%;"></div>
-              <span class="statistics_win_rate">52.74%</span>
-            </div>
-            <div class="statistic_filter_title" style="width: 138px;">
-              <span class="statistics_playtime">146,955</span>
-            </div>
-            <div class="statistic_filter_title" style="width: 132px;">
-              <span class="statistics_kda">
-                2.33:1
-              </span>
-            </div>
-            <div class="statistic_filter_title" style="width: 152px;">
-              <div class="statistics_cs_bar" style="width: 59%;"></div>
-              <span class="statistics_cs_value">188.86</span>
-            </div>
-            <div class="statistic_filter_title" style="width: 158px;">
-              <div class="statistics_gold_bar" style="width: 56.5%;"></div>
-              <span class="statistics_gold_value">11,240</span>
-            </div>
+                style="width: 50px; height: 50px; border-radius: 25px;"
+                src="http://attach.s.op.gg/forum/20171201162406_266306.png"
+              />
+            </a>
           </div>
-          <!-- #6 -->
-          <div
-            class="statistics_box"
-          >
-            <div class="statistics_number" style="width: 50px;">
-              <span style="color:rgb(135, 146, 146)">6</span>
-            </div>
-            <div class="statistic_filter_title" style="width: 169px;">
-              <a href="https://www.op.gg/champion/zilean/statistics/support">
-              <img
-                class="statistics_img"
-                src="https://opgg-static.akamaized.net/images/lol/champion/Zilean.png?image=w_140&v=1"
-              /></a>
-              <a href="https://www.op.gg/champion/zilean/statistics/support" style="text-decoration: none"><span class="statistics_champion">질리언</span></a>
-            </div>
-            <div class="statistic_filter_title" style="width: 169px;">
-              <div class="statistics_win_rate_bar" style="width: 62%;"></div>
-              <span class="statistics_win_rate">52.62%</span>
-            </div>
-            <div class="statistic_filter_title" style="width: 138px;">
-              <span class="statistics_playtime">101,120</span>
-            </div>
-            <div class="statistic_filter_title" style="width: 132px;">
-              <span class="statistics_kda">
-                2.89:1
-              </span>
-            </div>
-            <div class="statistic_filter_title" style="width: 152px;">
-              <div class="statistics_cs_bar" style="width: 24%;"></div>
-              <span class="statistics_cs_value">71.68</span>
-            </div>
-            <div class="statistic_filter_title" style="width: 158px;">
-              <div class="statistics_gold_bar" style="width: 43%;"></div>
-              <span class="statistics_gold_value">8,836</span>
-            </div>
+          <div class="top5_summoner_id">
+            <a
+              href="https://www.op.gg/summoner/userName=Hide+on+bush"
+              style="text-decoration: none"
+            >
+              <span
+                style="font-size: 88%; font-weight: 600; color: rgb(68, 75, 75);"
+                >Hide on Bush</span
+              ></a
+            >
           </div>
-          <!-- #7 -->
-          <div
-            class="statistics_box"
-          >
-            <div class="statistics_number" style="width: 50px;">
-              <span style="color:rgb(135, 146, 146)">7</span>
-            </div>
-            <div class="statistic_filter_title" style="width: 169px;">
-              <a href="https://www.op.gg/champion/janna/statistics/support">
-              <img
-                class="statistics_img"
-                src="https://opgg-static.akamaized.net/images/lol/champion/Janna.png?image=w_140&v=1"
-              /></a>
-              <a href="https://www.op.gg/champion/janna/statistics/support" style="text-decoration: none"><span class="statistics_champion">잔나</span></a>
-            </div>
-            <div class="statistic_filter_title" style="width: 169px;">
-              <div class="statistics_win_rate_bar" style="width: 62%;"></div>
-              <span class="statistics_win_rate">52.62%</span>
-            </div>
-            <div class="statistic_filter_title" style="width: 138px;">
-              <span class="statistics_playtime">116,097</span>
-            </div>
-            <div class="statistic_filter_title" style="width: 132px;">
-              <span class="statistics_kda">
-                2.84:1
-              </span>
-            </div>
-            <div class="statistic_filter_title" style="width: 152px;">
-              <div class="statistics_cs_bar" style="width: 6%;"></div>
-              <span class="statistics_cs_value">16.90</span>
-            </div>
-            <div class="statistic_filter_title" style="width: 158px;">
-              <div class="statistics_gold_bar" style="width: 40.5%;"></div>
-              <span class="statistics_gold_value">8,004</span>
-            </div>
+          <div class="top5_summoner_lv">
+            <span style="font-size: 78%; color: rgb(102, 102, 102)"
+              >Lv.262</span
+            >
           </div>
-          <!-- #8 -->
-          <div
-            class="statistics_box"
-          >
-            <div class="statistics_number" style="width: 50px;">
-              <span style="color:rgb(135, 146, 146)">8</span>
-            </div>
-            <div class="statistic_filter_title" style="width: 169px;">
-              <a href="https://www.op.gg/champion/nautilus/statistics/support">
-              <img
-                class="statistics_img"
-                src="https://opgg-static.akamaized.net/images/lol/champion/Nautilus.png?image=w_140&v=1"
-              /></a>
-              <a href="https://www.op.gg/champion/nautilus/statistics/support" style="text-decoration: none"><span class="statistics_champion">노틸러스</span></a>
-            </div>
-            <div class="statistic_filter_title" style="width: 169px;">
-              <div class="statistics_win_rate_bar" style="width: 62%;"></div>
-              <span class="statistics_win_rate">52.57%</span>
-            </div>
-            <div class="statistic_filter_title" style="width: 138px;">
-              <span class="statistics_playtime">353,864</span>
-            </div>
-            <div class="statistic_filter_title" style="width: 132px;">
-              <span class="statistics_kda">
-                2.55:1
-              </span>
-            </div>
-            <div class="statistic_filter_title" style="width: 152px;">
-              <div class="statistics_cs_bar" style="width: 16%;"></div>
-              <span class="statistics_cs_value">51.19</span>
-            </div>
-            <div class="statistic_filter_title" style="width: 158px;">
-              <div class="statistics_gold_bar" style="width: 38%;"></div>
-              <span class="statistics_gold_value">7,843</span>
-            </div>
+          <div class="top5_summoner_tier">
+            <img
+              src="https://opgg-static.akamaized.net/images/medals/challenger_1.png"
+              style="width: 25px; height: 25px; position: relative; left: 4px"
+            />
+            <span style="font-size: 77%; color:rgb(102, 102, 102);"
+              >Challenger</span
+            >
+            <span
+              style="font-size: 74%; font-weight: bold; color:rgb(85, 94, 94); position: relative; right: 4px;"
+              >1,340 LP</span
+            >
           </div>
-          <!-- 9 -->
-          <div
-            class="statistics_box"
-          >
-            <div class="statistics_number" style="width: 50px;">
-              <span style="color:rgb(135, 146, 146)">9</span>
-            </div>
-            <div class="statistic_filter_title" style="width: 169px;">
-              <a href="https://www.op.gg/champion/zac/statistics/jungle"> 
-              <img class="statistics_img"
-                src="https://opgg-static.akamaized.net/images/lol/champion/Zac.png?image=w_140&v=1"/></a>
-              <a href="https://www.op.gg/champion/zac/statistics/jungle" style="text-decoration: none"><span class="statistics_champion">자크</span></a>
-            </div>
-            <div class="statistic_filter_title" style="width: 169px;">
-              <div class="statistics_win_rate_bar" style="width: 62%;"></div>
-              <span class="statistics_win_rate">52.38%</span>
-            </div>
-            <div class="statistic_filter_title" style="width: 138px;">
-              <span class="statistics_playtime">114,010</span>
-            </div>
-            <div class="statistic_filter_title" style="width: 132px;">
-              <span class="statistics_kda" style="color: rgb(61, 149, 229)">
-                3.64:1
-              </span>
-            </div>
-            <div class="statistic_filter_title" style="width: 152px;">
-              <div class="statistics_cs_bar" style="width: 44%;"></div>
-              <span class="statistics_cs_value">127.71</span>
-            </div>
-            <div class="statistic_filter_title" style="width: 158px;">
-              <div class="statistics_gold_bar" style="width: 48.5%;"></div>
-              <span class="statistics_gold_value">10,023</span>
-            </div>
-          </div>
-          <!-- #10 -->
-          <div
-            class="statistics_box"
-          >
-            <div class="statistics_number" style="width: 50px;">
-              <span style="color:rgb(135, 146, 146)">10</span>
-            </div>
-            <div class="statistic_filter_title" style="width: 169px;">
-              <a href="https://www.op.gg/champion/cassiopeia/statistics/mid">
-              <img
-                class="statistics_img"
-                src="https://opgg-static.akamaized.net/images/lol/champion/Cassiopeia.png?image=w_140&v=1"
-              /></a>
-              <a href="https://www.op.gg/champion/cassiopeia/statistics/mid" style="text-decoration: none"><span class="statistics_champion">카시오페아</span></a>
-            </div>
-            <div class="statistic_filter_title" style="width: 169px;">
-              <div class="statistics_win_rate_bar" style="width: 62%;"></div>
-              <span class="statistics_win_rate">52.38%</span>
-            </div>
-            <div class="statistic_filter_title" style="width: 138px;">
-              <span class="statistics_playtime">48,737</span>
-            </div>
-            <div class="statistic_filter_title" style="width: 132px;">
-              <span class="statistics_kda">
-                2.17:1
-              </span>
-            </div>
-            <div class="statistic_filter_title" style="width: 152px;">
-              <div class="statistics_cs_bar" style="width: 57%;"></div>
-              <span class="statistics_cs_value">184.40</span>
-            </div>
-            <div class="statistic_filter_title" style="width: 158px;">
-              <div class="statistics_gold_bar" style="width: 59%;"></div>
-              <span class="statistics_gold_value">11,251</span>
-            </div>
-          </div>
-          <!-- #11 -->
-          <div
-            class="statistics_box"
-          >
-            <div class="statistics_number" style="width: 50px;">
-              <span style="color:rgb(135, 146, 146)">11</span>
-            </div>
-            <div class="statistic_filter_title" style="width: 169px;">
-              <a href="https://www.op.gg/champion/leona/statistics/support">
-              <img
-                class="statistics_img"
-                src="https://opgg-static.akamaized.net/images/lol/champion/Leona.png?image=w_140&v=1"
-              /></a>
-              <a href="https://www.op.gg/champion/leona/statistics/support" style="text-decoration: none"><span class="statistics_champion">레오나</span></a>
-            </div>
-            <div class="statistic_filter_title" style="width: 169px;">
-              <div class="statistics_win_rate_bar" style="width: 62%;"></div>
-              <span class="statistics_win_rate">52.32%</span>
-            </div>
-            <div class="statistic_filter_title" style="width: 138px;">
-              <span class="statistics_playtime">357,752</span>
-            </div>
-            <div class="statistic_filter_title" style="width: 132px;">
-              <span class="statistics_kda">
-                2.52:1
-              </span>
-            </div>
-            <div class="statistic_filter_title" style="width: 152px;">
-              <div class="statistics_cs_bar" style="width: 14.5%;"></div>
-              <span class="statistics_cs_value">49.67</span>
-            </div>
-            <div class="statistic_filter_title" style="width: 158px;">
-              <div class="statistics_gold_bar" style="width: 37%;"></div>
-              <span class="statistics_gold_value">7,769</span>
-            </div>
-          </div>
-          <!-- #12 -->
-          <div
-            class="statistics_box"
-          >
-            <div class="statistics_number" style="width: 50px;">
-              <span style="color:rgb(135, 146, 146)">12</span>
-            </div>
-            <div class="statistic_filter_title" style="width: 169px;">
-              <a href="https://www.op.gg/champion/kayle/statistics/top">
-              <img
-                class="statistics_img"
-                src="https://opgg-static.akamaized.net/images/lol/champion/Kayle.png?image=w_140&v=1"
-              /></a>
-              <a href="https://www.op.gg/champion/kayle/statistics/top" style="text-decoration: none"><span class="statistics_champion">케일</span></a>
-            </div>
-            <div class="statistic_filter_title" style="width: 169px;">
-              <div class="statistics_win_rate_bar" style="width: 62%;"></div>
-              <span class="statistics_win_rate">52.31%</span>
-            </div>
-            <div class="statistic_filter_title" style="width: 138px;">
-              <span class="statistics_playtime">172,850</span>
-            </div>
-            <div class="statistic_filter_title" style="width: 132px;">
-              <span class="statistics_kda">
-                1.97:1
-              </span>
-            </div>
-            <div class="statistic_filter_title" style="width: 152px;">
-              <div class="statistics_cs_bar" style="width: 56.5%;"></div>
-              <span class="statistics_cs_value">183.17</span>
-            </div>
-            <div class="statistic_filter_title" style="width: 158px;">
-              <div class="statistics_gold_bar" style="width: 57.5%;"></div>
-              <span class="statistics_gold_value">11,366</span>
-            </div>
-          </div>
-          <!-- #13 -->
-          <div
-            class="statistics_box"
-          >
-            <div class="statistics_number" style="width: 50px;">
-              <span style="color:rgb(135, 146, 146)">13</span>
-            </div>
-            <div class="statistic_filter_title" style="width: 169px;">
-              <a href="https://www.op.gg/champion/fizz/statistics/mid">
-              <img
-                class="statistics_img"
-                src="https://opgg-static.akamaized.net/images/lol/champion/Fizz.png?image=w_140&v=1"
-              /></a>
-              <a href="https://www.op.gg/champion/fizz/statistics/mid" style="text-decoration: none"><span class="statistics_champion">피즈</span></a>
-            </div>
-            <div class="statistic_filter_title" style="width: 169px;">
-              <div class="statistics_win_rate_bar" style="width: 62%;"></div>
-              <span class="statistics_win_rate">52.30%</span>
-            </div>
-            <div class="statistic_filter_title" style="width: 138px;">
-              <span class="statistics_playtime">222,446</span>
-            </div>
-            <div class="statistic_filter_title" style="width: 132px;">
-              <span class="statistics_kda">
-                2.63:1
-              </span>
-            </div>
-            <div class="statistic_filter_title" style="width: 152px;">
-              <div class="statistics_cs_bar" style="width: 47%;"></div>
-              <span class="statistics_cs_value">150.32</span>
-            </div>
-            <div class="statistic_filter_title" style="width: 158px;">
-              <div class="statistics_gold_bar" style="width: 57%;"></div>
-              <span class="statistics_gold_value">11,165</span>
-            </div>
-          </div>
-          <!-- #14 -->
-          <div
-            class="statistics_box"
-          >
-            <div class="statistics_number" style="width: 50px;">
-              <span style="color:rgb(135, 146, 146)">14</span>
-            </div>
-            <div class="statistic_filter_title" style="width: 169px;">
-              <a href="https://www.op.gg/champion/bard/statistics/support">
-              <img
-                class="statistics_img"
-                src="https://opgg-static.akamaized.net/images/lol/champion/Bard.png?image=w_140&v=1"
-              /></a>
-              <a href="https://www.op.gg/champion/bard/statistics/support" style="text-decoration: none"><span class="statistics_champion">바드</span></a>
-            </div>
-            <div class="statistic_filter_title" style="width: 169px;">
-              <div class="statistics_win_rate_bar" style="width: 62%;"></div>
-              <span class="statistics_win_rate">52.17%</span>
-            </div>
-            <div class="statistic_filter_title" style="width: 138px;">
-              <span class="statistics_playtime">85,747</span>
-            </div>
-            <div class="statistic_filter_title" style="width: 132px;">
-              <span class="statistics_kda">
-                2.68:1
-              </span>
-            </div>
-            <div class="statistic_filter_title" style="width: 152px;">
-              <div class="statistics_cs_bar" style="width: 9%;"></div>
-              <span class="statistics_cs_value">25.72</span>
-            </div>
-            <div class="statistic_filter_title" style="width: 158px;">
-              <div class="statistics_gold_bar" style="width: 42%;"></div>
-              <span class="statistics_gold_value">8,627</span>
-            </div>
-          </div>
-          <!-- #15 -->
-          <div
-            class="statistics_box"
-          >
-            <div class="statistics_number" style="width: 50px;">
-              <span style="color:rgb(135, 146, 146)">15</span>
-            </div>
-            <div class="statistic_filter_title" style="width: 169px;">
-              <a href="https://www.op.gg/champion/pyke/statistics/support">
-              <img
-                class="statistics_img"
-                src="https://opgg-static.akamaized.net/images/lol/champion/Pyke.png?image=w_140&v=1"
-              /></a>
-              <a href="https://www.op.gg/champion/pyke/statistics/support" style="text-decoration: none"><span class="statistics_champion">파이크</span></a>
-            </div>
-            <div class="statistic_filter_title" style="width: 169px;">
-              <div class="statistics_win_rate_bar" style="width: 62%;"></div>
-              <span class="statistics_win_rate">52.02%</span>
-            </div>
-            <div class="statistic_filter_title" style="width: 138px;">
-              <span class="statistics_playtime">319,437</span>
-            </div>
-            <div class="statistic_filter_title" style="width: 132px;">
-              <span class="statistics_kda">
-                2.63:1
-              </span>
-            </div>
-            <div class="statistic_filter_title" style="width: 152px;">
-              <div class="statistics_cs_bar" style="width: 17%;"></div>
-              <span class="statistics_cs_value">52.16</span>
-            </div>
-            <div class="statistic_filter_title" style="width: 158px;">
-              <div class="statistics_gold_bar" style="width: 52%;"></div>
-              <span class="statistics_gold_value">10,681</span>
-            </div>
-          </div>
-          <!-- #16 -->
-          <div
-            class="statistics_box"
-          >
-            <div class="statistics_number" style="width: 50px;">
-              <span style="color:rgb(135, 146, 146)">16</span>
-            </div>
-            <div class="statistic_filter_title" style="width: 169px;">
-              <a href="https://www.op.gg/champion/swain/statistics/support">
-              <img
-                class="statistics_img"
-                src="https://opgg-static.akamaized.net/images/lol/champion/Swain.png?image=w_140&v=1"
-              /></a>
-              <a href="https://www.op.gg/champion/swain/statistics/support" style="text-decoration: none"><span class="statistics_champion">스웨인</span></a>
-            </div>
-            <div class="statistic_filter_title" style="width: 169px;">
-              <div class="statistics_win_rate_bar" style="width: 61%;"></div>
-              <span class="statistics_win_rate">51.91%</span>
-            </div>
-            <div class="statistic_filter_title" style="width: 138px;">
-              <span class="statistics_playtime">162,647</span>
-            </div>
-            <div class="statistic_filter_title" style="width: 132px;">
-              <span class="statistics_kda">
-                2.49:1
-              </span>
-            </div>
-            <div class="statistic_filter_title" style="width: 152px;">
-              <div class="statistics_cs_bar" style="width: 28%;"></div>
-              <span class="statistics_cs_value">85.92</span>
-            </div>
-            <div class="statistic_filter_title" style="width: 158px;">
-              <div class="statistics_gold_bar" style="width: 47%;"></div>
-              <span class="statistics_gold_value">9,672</span>
-            </div>
-          </div>
-          <!-- #17 -->
-          <div
-            class="statistics_box"
-          >
-            <div class="statistics_number" style="width: 50px;">
-              <span style="color:rgb(135, 146, 146)">17</span>
-            </div>
-            <div class="statistic_filter_title" style="width: 169px;">
-              <a href="https://www.op.gg/champion/quinn/statistics/top">
-              <img
-                class="statistics_img"
-                src="https://opgg-static.akamaized.net/images/lol/champion/Quinn.png?image=w_140&v=1"
-              /></a>
-              <a href="https://www.op.gg/champion/quinn/statistics/top" style="text-decoration: none"><span class="statistics_champion">퀸</span></a>
-            </div>
-            <div class="statistic_filter_title" style="width: 169px;">
-              <div class="statistics_win_rate_bar" style="width: 61%;"></div>
-              <span class="statistics_win_rate">51.85%</span>
-            </div>
-            <div class="statistic_filter_title" style="width: 138px;">
-              <span class="statistics_playtime">110,294</span>
-            </div>
-            <div class="statistic_filter_title" style="width: 132px;">
-              <span class="statistics_kda">
-                1.96:1
-              </span>
-            </div>
-            <div class="statistic_filter_title" style="width: 152px;">
-              <div class="statistics_cs_bar" style="width: 49%;"></div>
-              <span class="statistics_cs_value">160.75</span>
-            </div>
-            <div class="statistic_filter_title" style="width: 158px;">
-              <div class="statistics_gold_bar" style="width: 55%;"></div>
-              <span class="statistics_gold_value">11,223</span>
-            </div>
-          </div>
-          <!-- #18 -->
-          <div
-            class="statistics_box"
-          >
-            <div class="statistics_number" style="width: 50px;">
-              <span style="color:rgb(135, 146, 146)">18</span>
-            </div>
-            <div class="statistic_filter_title" style="width: 169px;">
-              <a href="https://www.op.gg/champion/vi/statistics/jungle">
-              <img
-                class="statistics_img"
-                src="https://opgg-static.akamaized.net/images/lol/champion/Vi.png?image=w_140&v=1"
-              /></a>
-              <a href="https://www.op.gg/champion/vi/statistics/jungle" style="text-decoration: none"><span class="statistics_champion">바이</span></a>
-            </div>
-            <div class="statistic_filter_title" style="width: 169px;">
-              <div class="statistics_win_rate_bar" style="width: 61%;"></div>
-              <span class="statistics_win_rate">51.84%</span>
-            </div>
-            <div class="statistic_filter_title" style="width: 138px;">
-              <span class="statistics_playtime">118,711</span>
-            </div>
-            <div class="statistic_filter_title" style="width: 132px;">
-              <span class="statistics_kda">
-                2.31:1
-              </span>
-            </div>
-            <div class="statistic_filter_title" style="width: 152px;">
-              <div class="statistics_cs_bar" style="width: 45%;"></div>
-              <span class="statistics_cs_value">145.11</span>
-            </div>
-            <div class="statistic_filter_title" style="width: 158px;">
-              <div class="statistics_gold_bar" style="width: 53%;"></div>
-              <span class="statistics_gold_value">10,988</span>
-            </div>
-          </div>
-          <!-- #19 -->
-          <div
-            class="statistics_box"
-          >
-            <div class="statistics_number" style="width: 50px;">
-              <span style="color:rgb(135, 146, 146)">19</span>
-            </div>
-            <div class="statistic_filter_title" style="width: 169px;">
-              <a href="https://www.op.gg/champion/soraka/statistics/support">
-              <img
-                class="statistics_img"
-                src="https://opgg-static.akamaized.net/images/lol/champion/Soraka.png?image=w_140&v=1"
-              /></a>
-              <a href="https://www.op.gg/champion/soraka/statistics/support" style="text-decoration: none"><span class="statistics_champion">소라카</span></a>
-            </div>
-            <div class="statistic_filter_title" style="width: 169px;">
-              <div class="statistics_win_rate_bar" style="width: 61%;"></div>
-              <span class="statistics_win_rate">51.71%</span>
-            </div>
-            <div class="statistic_filter_title" style="width: 138px;">
-              <span class="statistics_playtime">179,685</span>
-            </div>
-            <div class="statistic_filter_title" style="width: 132px;">
-              <span class="statistics_kda">
-                2.77:1
-              </span>
-            </div>
-            <div class="statistic_filter_title" style="width: 152px;">
-              <div class="statistics_cs_bar" style="width: 6%;"></div>
-              <span class="statistics_cs_value">16.10</span>
-            </div>
-            <div class="statistic_filter_title" style="width: 158px;">
-              <div class="statistics_gold_bar" style="width: 37%;"></div>
-              <span class="statistics_gold_value">7,528</span>
-            </div>
-          </div>
-          <!-- #20 -->
-          <div
-            class="statistics_box"
-          >
-            <div class="statistics_number" style="width: 50px;">
-              <span style="color:rgb(135, 146, 146)">20</span>
-            </div>
-            <div class="statistic_filter_title" style="width: 169px;">
-              <a href="https://www.op.gg/champion/zyra/statistics/support">
-              <img
-                class="statistics_img"
-                src="https://opgg-static.akamaized.net/images/lol/champion/Zyra.png?image=w_140&v=1"
-              /></a>
-              <a href="https://www.op.gg/champion/zyra/statistics/support" style="text-decoration: none"><span class="statistics_champion">자이라</span></a>
-            </div>
-            <div class="statistic_filter_title" style="width: 169px;">
-              <div class="statistics_win_rate_bar" style="width: 61%;"></div>
-              <span class="statistics_win_rate">51.62%</span>
-            </div>
-            <div class="statistic_filter_title" style="width: 138px;">
-              <span class="statistics_playtime">101,619</span>
-            </div>
-            <div class="statistic_filter_title" style="width: 132px;">
-              <span class="statistics_kda">
-                2.11:1
-              </span>
-            </div>
-            <div class="statistic_filter_title" style="width: 152px;">
-              <div class="statistics_cs_bar" style="width: 16%;"></div>
-              <span class="statistics_cs_value">50.81</span>
-            </div>
-            <div class="statistic_filter_title" style="width: 158px;">
-              <div class="statistics_gold_bar" style="width: 46%;"></div>
-              <span class="statistics_gold_value">9,330</span>
-            </div>
+          <div class="top5_summoner_winloserate">
+            <div class="winorlose_rate">
+              <div class="win_rate" style="width: 51%;">
+                <span
+                  style="font-size: 74%; font-weight: 700; color: white; position: relative; right: 26px; bottom: 4px;"
+                  >541</span
+                >
+              </div>
+              <div class="lose_rate" style="width: 49%;">
+                <span
+                  style="font-size: 74%; font-weight: 700; color: white; position: relative; left: 13px; bottom: 4px;"
+                >
+                  514
+                </span>
+              </div>
+            </div>
+            <span
+              style="font-size: 85%; float: right; position: relative; left: 7px; bottom: 21px;"
+              >51%</span
+            >
           </div>
         </div>
+        <!-- #5 -->
+        <div class="top5_boxes" style="margin-left: 30px;"">
+        <div class="top5_numbox">
+          <span class="top5_num">5</span>
+        </div>
+        <div class="top5_summoner_img">
+          <a href="https://www.op.gg/summoner/userName=Gen+G+Ruler">
+            <img
+              style="width: 50px; height: 50px; border-radius: 25px;"
+              src="http://gameabout.com/files/attach/images/111/778/443/003/0e5ffd20076cf5d54e7ef22d3383bd9c.jpg"
+            />
+          </a>
+        </div>
+        <div class="top5_summoner_id">
+          <a
+            href="https://www.op.gg/summoner/userName=Gen+G+Ruler"
+            style="text-decoration: none"
+          >
+            <span
+              style="font-size: 88%; font-weight: 600; color: rgb(68, 75, 75);"
+              >Gen G Ruler</span
+            ></a
+          >
+        </div>
+        <div class="top5_summoner_lv">
+          <span style="font-size: 78%; color: rgb(102, 102, 102)">Lv.319</span>
+        </div>
+        <div class="top5_summoner_tier">
+          <img
+            src="https://opgg-static.akamaized.net/images/medals/challenger_1.png"
+            style="width: 25px; height: 25px; position: relative; left: 4px"
+          />
+          <span style="font-size: 77%; color:rgb(102, 102, 102);"
+            >Challenger</span
+          >
+          <span
+            style="font-size: 74%; font-weight: bold; color:rgb(85, 94, 94); position: relative; right: 4px;"
+            >1,323 LP</span
+          >
+        </div>
+        <div class="top5_summoner_winloserate">
+          <div class="winorlose_rate">
+            <div class="win_rate" style="width: 56%;">
+              <span
+                style="font-size: 74%; font-weight: 700; color: white; position: relative; right: 26px; bottom: 4px;"
+                >769</span
+              >
+            </div>
+            <div class="lose_rate" style="width: 44%;">
+              <span
+                style="font-size: 74%; font-weight: 700; color: white; position: relative; left: 13px; bottom: 4px;"
+              >
+                605
+              </span>
+            </div>
+          </div>
+          <span
+            style="font-size: 85%; float: right; position: relative; left: 7px; bottom: 21px;"
+            >56%</span
+          >
+        </div>
       </div>
+    </div>
+    <!-- Statistic Table -->
+    <div
+      class="full_adjust"
+      style="width: 100%; height: 6569px; margin-top: 20px; border: 1px solid rgb(213, 216, 216)"
+    >
+      <!-- Table Head -->
+      <div
+        style="width: 100%; height: 43px; border-bottom: 1px solid rgb(213, 216, 216); background-color: rgb(242, 242, 242)"
+      >
+        <div class="statistic_filter_title" style="width: 50px;">
+          <button
+            type="button"
+            style="width: 100%; height: 100%; background-color: rgb(242, 242, 242); border: none;"
+          >
+            <span
+              style="font-size: 110%; color: rgb(31, 142, 205); position: relative; left: 7px; bottom: 1px;"
+              >#</span
+            >
+            <i
+              class="fas fa-caret-up"
+              style="width: 8px; height: 8px; position: relative; left: 14px; bottom: 5px; color: rgb(31, 142, 205)"
+            ></i>
+          </button>
+        </div>
+        <div class="statistic_filter_title" style="width: 169px;">
+          <button
+            type="button"
+            style="width: 100%; height: 100%; background-color: rgb(242, 242, 242); border: none;"
+          >
+            <span
+              style="font-size: 93%; color: rgb(85, 94, 94); float: left; position: relative; right: 3px;"
+              >챔피언</span
+            >
+            <i
+              class="fas fa-caret-up"
+              style="width: 8px; height: 8px; position: relative; top: 3px; color: rgb(126, 138, 138); float: right"
+            ></i>
+            <i
+              class="fas fa-caret-down"
+              style="width: 8px; height: 8px; position: relative; left: 60px; bottom: 3px; color: rgb(126, 138, 138);"
+            ></i>
+          </button>
+        </div>
+        <div class="statistic_filter_title" style="width: 169px;">
+          <button
+            type="button"
+            style="width: 100%; height: 100%; background-color: rgb(242, 242, 242); border: none;"
+          >
+            <span style="font-size: 93%; color: rgb(85, 94, 94); float: left;"
+              >승률</span
+            >
+            <i
+              class="fas fa-caret-up"
+              style="width: 8px; height: 8px; position: relative; top: 3px; color: rgb(126, 138, 138); float: right"
+            ></i>
+            <i
+              class="fas fa-caret-down"
+              style="width: 8px; height: 8px; position: relative; left: 66px; bottom: 3px; color: rgb(126, 138, 138);"
+            ></i>
+          </button>
+        </div>
+        <div class="statistic_filter_title" style="width: 138px;">
+          <button
+            type="button"
+            style="width: 100%; height: 100%; background-color: rgb(242, 242, 242); border: none;"
+          >
+            <span
+              style="font-size: 93%; color: rgb(85, 94, 94); float: left; position: relative; left: 5px;"
+              >플레이수</span
+            >
+            <i
+              class="fas fa-caret-up"
+              style="width: 8px; height: 8px; position: relative; top: 3px; color: rgb(126, 138, 138); float: right"
+            ></i>
+            <i
+              class="fas fa-caret-down"
+              style="width: 8px; height: 8px; position: relative; left: 38px; bottom: 3px; color: rgb(126, 138, 138);"
+            ></i>
+          </button>
+        </div>
+        <div class="statistic_filter_title" style="width: 132px;">
+          <button
+            type="button"
+            style="width: 100%; height: 100%; background-color: rgb(242, 242, 242); border: none;"
+          >
+            <span style="font-size: 93%; color: rgb(85, 94, 94); float: left;"
+              >평점</span
+            >
+            <i
+              class="fas fa-caret-up"
+              style="width: 8px; height: 8px; position: relative; top: 3px; color: rgb(126, 138, 138); float: right"
+            ></i>
+            <i
+              class="fas fa-caret-down"
+              style="width: 8px; height: 8px; position: relative; left: 48px; bottom: 3px; color: rgb(126, 138, 138);"
+            ></i>
+          </button>
+        </div>
+        <div class="statistic_filter_title" style="width: 152px;">
+          <button
+            type="button"
+            style="width: 100%; height: 100%; background-color: rgb(242, 242, 242); border: none;"
+          >
+            <span
+              style="font-size: 100%; color: rgb(85, 94, 94); float: left; position: relative; bottom: 2px;"
+              >CS</span
+            >
+            <i
+              class="fas fa-caret-up"
+              style="width: 8px; height: 8px; position: relative; top: 3px; color: rgb(126, 138, 138); float: right"
+            ></i>
+            <i
+              class="fas fa-caret-down"
+              style="width: 8px; height: 8px; position: relative; left: 63px; bottom: 3px; color: rgb(126, 138, 138);"
+            ></i>
+          </button>
+        </div>
+        <div class="statistic_filter_title" style="width: 158px;">
+          <button
+            type="button"
+            style="width: 100%; height: 100%; background-color: rgb(242, 242, 242); border: none;"
+          >
+            <span style="font-size: 93%; color: rgb(85, 94, 94); float: left;"
+              >골드</span
+            >
+            <i
+              class="fas fa-caret-up"
+              style="width: 8px; height: 8px; position: relative; top: 3px; color: rgb(126, 138, 138); float: right; position: relative; right: 5px"
+            ></i>
+            <i
+              class="fas fa-caret-down"
+              style="width: 8px; height: 8px; position: relative; left: 56px; bottom: 3px; color: rgb(126, 138, 138);"
+            ></i>
+          </button>
+        </div>
+      </div>
+      <!-- Statistics -->
     </div>
     <!-- footer -->
     <div
@@ -1582,23 +1188,38 @@
       style="width: 1060px; height: 85px; margin: 0 auto; overflow: hidden;"
     >
       <div>
-        <a href="https://www.op.gg/about/" target="_self" style="font-size: 12px; color: black">About OP.GG</a>
-        <a href="https://www.op.gg/about/logos/" target="_self" class="footer_text" style="color: black"
+        <a
+          href="https://www.op.gg/about/"
+          target="_self"
+          style="font-size: 12px; color: black"
+          >About OP.GG</a
+        >
+        <a
+          href="https://www.op.gg/about/logos/"
+          target="_self"
+          class="footer_text"
+          style="color: black"
           >로고 히스토리</a
         >
-        <a href="https://www.op.gg/about/privacy/" target="_self" class="footer_text" style="font-weight: bold; color: black"
+        <a
+          href="https://www.op.gg/about/privacy/"
+          target="_self"
+          class="footer_text"
+          style="font-weight: bold; color: black"
           ><b>개인정보처리방침</b></a
         >
-        <a href="https://opggkr.helpscoutdocs.com/collection/121-opgg" class="footer_text" style="color:black"
+        <a
+          href="https://opggkr.helpscoutdocs.com/collection/121-opgg"
+          class="footer_text"
+          style="color:black"
           >도움말</a
         >
-        <a href="..." class="footer_text" style="color: black"
-          >제휴</a
-        >
-        <a href="..." class="footer_text" style="color: black"
-          >문의/피드백</a
-        >
-        <a href="http://log.op.gg/recruit/" class="footer_text" style="color: black"
+        <a href="..." class="footer_text" style="color: black">제휴</a>
+        <a href="..." class="footer_text" style="color: black">문의/피드백</a>
+        <a
+          href="http://log.op.gg/recruit/"
+          class="footer_text"
+          style="color: black"
           >채용</a
         >
       </div>
@@ -1614,7 +1235,10 @@
             class="fab fa-instagram"
             style="color: rgb(126, 138, 138); float: right; margin-left: 10px"
           ></i>
-          <i class="fab fa-twitter" style="color: rgb(126, 138, 138); float: right"></i>
+          <i
+            class="fab fa-twitter"
+            style="color: rgb(126, 138, 138); float: right"
+          ></i>
         </span>
       </div>
     </div>
