@@ -14,13 +14,19 @@
           width: 1060px;
         }
       }
+      /* 위 내용으로 일정 크기까지 고정된 채로 줄어들다가 1080px보다 작아지면서 페이지가 가려지기 시작.
+          op.gg 가 저렇게 되길래 구현해보았다. */
     </style>
   </head>
   <body style="width:100%; background-color: #5383e8;">
+    <!-- 나는 전체적으로 float으로 먼저 정렬시키고 position: relative 속성을 즐겨쓰는 편인데 태연이는 마진을 줘서 정렬하는 편이었음
+      마진정렬이 나쁜것 같진 않지만 뭔가 공간을 비워두는게 아니라 마진으로 채운다는 느낌이라 잘 안쓰게 됨.
+      다만 padding 줘서 깔끔하게 하는건 태연이 코드보고 배웠다. padding 속성 활용은 꽤나 괜찮은 방법인듯.-->
     <!-- header -->
     <div class="flex">
       <!-- first line -->
       <div style="height: 39px; width: 100%; background-color: #232f46;">
+        <!-- 처음엔 navbar로 되어있었는데 굳이 그럴 필요성을 못느껴서 배치가 더 쉽게 가능하게 그냥 div로 수정 -->
         <div
           style="height: 100%; width: 97px; padding-top: 10px; padding-bottom: 10px; background-color: #5383e8; float: left;"
         >
@@ -99,11 +105,15 @@
       </div>
       <!-- second line -->
       <div style="height: 48px; width: 100%; overflow: hidden;">
+        <!-- 마찬가지로 여기도 원래 navbar였는데, 이렇게 하면 버튼들이 창이 줄어듬에 따라 위치조정을 원본 op.gg처럼 하기가 어려워서 nav바로 뜯어고침
+              margin: 0 auto 속성은 아주 쓸만한 것 같음.-->
         <div style="height: 100%; width: 1250px; margin: 0 auto;">
           <div
             style="height: 100%; float: left; padding-top: 12px; padding-bottom: 12px; border-bottom: 3px solid white"
           >
-            <a href="https://naver.com" style="color: white; font-size: 95%"
+            <a
+              href="/opgg.html"
+              style="color: white; font-size: 95%; text-decoration: none"
               >홈</a
             >
           </div>
@@ -111,8 +121,8 @@
             style="height: 100%; float: left; padding-top: 12px; padding-bottom: 12px; position: relative; left: 22px;"
           >
             <a
-              href="https://naver.com"
-              style="color: rgb(179, 205, 255); font-size: 95%"
+              href="..."
+              style="color: rgb(179, 205, 255); font-size: 95%; text-decoration: none"
               >잼피언 분석</a
             >
           </div>
@@ -120,8 +130,8 @@
             style="height: 100%; float: left; padding-top: 12px; padding-bottom: 12px; position: relative; left: 38px;"
           >
             <a
-              href="https://naver.com"
-              style="color: rgb(179, 205, 255); font-size: 95%"
+              href="/op.gg_statistics.html"
+              style="color: rgb(179, 205, 255); font-size: 95%; text-decoration: none"
               >통계</a
             >
           </div>
@@ -129,8 +139,8 @@
             style="height: 100%; float: left; padding-top: 12px; padding-bottom: 12px; position: relative; left: 54px;"
           >
             <a
-              href="https://naver.com"
-              style="color: rgb(179, 205, 255); font-size: 95%"
+              href="/op.gg_ranking.html"
+              style="color: rgb(179, 205, 255); font-size: 95%; text-decoration: none"
               >랭킹</a
             >
           </div>
@@ -138,8 +148,8 @@
             style="height: 100%; float: left; padding-top: 12px; padding-bottom: 12px; position: relative; left: 70px;"
           >
             <a
-              href="https://naver.com"
-              style="color: rgb(179, 205, 255); font-size: 95%"
+              href="..."
+              style="color: rgb(179, 205, 255); font-size: 95%; text-decoration: none"
               >프로관전</a
             >
           </div>
@@ -147,8 +157,8 @@
             style="height: 100%; float: left; padding-top: 12px; padding-bottom: 12px; position: relative; left: 90px;"
           >
             <a
-              href="https://naver.com"
-              style="color: rgb(179, 205, 255); font-size: 95%"
+              href="..."
+              style="color: rgb(179, 205, 255); font-size: 95%; text-decoration: none"
               >커뮤티니</a
             >
           </div>
@@ -189,6 +199,7 @@
           src=""
         />
         <!-- Button trigger modal -->
+        <!-- 태연이꺼에는 이거 자체가 없었음... 씨발 -->
         <button
           type="button"
           class="btn"
@@ -282,6 +293,8 @@
         class="row"
         style="width: 1050px; height: 395px; margin: 0 auto; position: relative; top: 42px; background-color: white"
       >
+        <!-- 처음 받았을때는 class="row" 를 사용해서 만들어놓았는데, 이러면 창을 줄일때 박스가 같이 줄고 내용물은 그대로라 글자가 튀어나고 지랄이나게 되있음
+              그래서 걍 div로 박스 다시 만들고 배치함. 최초에 제일 큰 박스를 만들때는 px로 설정하는게 좋을 듯 함. -->
         <div
           style="width: 100%; height: 12.5%; border-bottom: 1px solid rgb(240, 240, 240)"
         >
@@ -721,10 +734,13 @@
     <!-- footer -->
     <div style="width: 1060px; height: 85px; margin: 0 auto; overflow: hidden;">
       <div>
+        <!-- 이거 보면 아무속성 없는 쌩 div 안에 넣어놨는데, 정렬에는 문제가 없었으나 별로 좋은 접근은 아닌듯. -->
         <span style="font-size: 12px; color: white">About OP.GG</span>
         <span style="font-size: 12px; color: white; margin-left: 16px"
           >로고 히스토리</span
         >
+        <!-- 위에서 마진을 잘 안쓰게 된다고 했는데, 이런 경우에는 마진이 더 좋은 접근인 것 같음.
+              여기서 position: relative를 쓰면 갈수록 더 큰 값을 줘서 벌려줘야 하는데 마진은 같은 값으로 벌려줄 수 있었음.-->
         <span style="font-size: 12px; color: white; margin-left: 16px"
           ><b>개인정보처리방침</b></span
         >
@@ -742,6 +758,7 @@
         >
       </div>
       <div>
+        -->
         <span style="font-size: 12px; color: white"
           ><b>© 2012-2019 OP.GG. Data based on League of Legends Korea.</b>
         </span>
@@ -749,6 +766,8 @@
           class="fab fa-facebook-square"
           style="color: white; float: right; margin-left: 10px"
         ></i>
+        <!-- 기왕 할꺼면 그래도 크기는 어느정도 맞춰라 좀 ㅡㅡ;; 
+              그리고 여기도 사실 i태그 위에 a태그 걸어서 원하는 링크로 연결 쌉가능... 하지만 안했쥬-->
         <i
           class="fab fa-instagram"
           style="color: white; float: right; margin-left: 10px"
